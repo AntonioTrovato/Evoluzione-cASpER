@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="Prova">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,12 +74,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TIROCINIOTRIENNALE/Copia/copia_cASpER-DESKTOP-MOFSF87/Code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -88,7 +88,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -115,20 +115,31 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.casper2" />
       <item itemvalue="Gradle.casper" />
+      <item itemvalue="Gradle.casper2" />
       <item itemvalue="Gradle.Code [dependencies]" />
       <item itemvalue="JUnit.JUnitTestSuite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Code [dependencies]" />
         <item itemvalue="JUnit.JUnitTestSuite" />
         <item itemvalue="JUnit.JUnitTestSuite" />
         <item itemvalue="JUnit.JUnitTestSuite" />
         <item itemvalue="JUnit.JUnitTestSuite" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -209,32 +220,26 @@
       <workItem from="1652274759433" duration="2000" />
       <workItem from="1652274896733" duration="959000" />
       <workItem from="1652276028182" duration="68000" />
-      <workItem from="1652276125183" duration="1226000" />
+      <workItem from="1652276125183" duration="1613000" />
+      <workItem from="1652278067565" duration="188000" />
+      <workItem from="1652278345329" duration="2462000" />
     </task>
+    <task id="LOCAL-00001" summary="Sistemazione casper2">
+      <created>1652277394077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652277394078</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Prova">
+      <created>1652277577782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652277577782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="JUnitTestSuite - 2019.12.28 at 18h 14m 20s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTestSuite - 2019.12.28 at 18h 15m 03s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTestSuite - 2019.12.29 at 21h 37m 20s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTestSuite - 2019.12.29 at 22h 25m 40s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTestSuite - 2019.12.29 at 23h 18m 22s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTestSuite - 2019.12.29 at 23h 19m 16s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JUnitTestSuite - 2020.03.03 at 11h 53m 13s.xml">
-      <configuration name="JUnitTestSuite" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -244,7 +249,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -255,6 +262,15 @@
       <path value="$PROJECT_DIR$/../../.." />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Sistemazione casper2" />
+    <MESSAGE value="Prova" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prova" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="615" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1652279190842">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="615" y="367" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1652279190842" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/casper$cASpER.ic" NAME="cASpER Coverage Results" MODIFIED="1574294040175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
