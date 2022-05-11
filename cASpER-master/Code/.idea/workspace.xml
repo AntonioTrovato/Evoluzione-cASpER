@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/../.." userTempatePath="" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="casper" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>System.out</find>
+      <find>log.info(</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="DivergentChange" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZqTPfVvPn7H6t0Yv63wyhFv7R3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TIROCINIOTRIENNALE/Copia/copia_cASpER-DESKTOP-MOFSF87/Code" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="PsiViewer.ProjectComponent">
+    <option name="HIGHLIGHT" value="false" />
+    <option name="FILTER_WHITESPACE" value="false" />
+    <option name="SHOW_PROPERTIES" value="false" />
+    <option name="SPLIT_DIVIDER_POSITION" value="300" />
+    <option name="AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
+  </component>
+  <component name="RunManager" selected="Gradle.casper2">
+    <configuration name="Code [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="casper" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="-stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":runIde" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="casper2" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="-stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":runIde" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JUnitTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.JUnitTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.casper2" />
+      <item itemvalue="Gradle.casper" />
+      <item itemvalue="JUnit.JUnitTestSuite" />
+      <item itemvalue="Gradle.Code [dependencies]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Code [dependencies]" />
+        <item itemvalue="JUnit.JUnitTestSuite" />
+        <item itemvalue="JUnit.JUnitTestSuite" />
+        <item itemvalue="JUnit.JUnitTestSuite" />
+        <item itemvalue="JUnit.JUnitTestSuite" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="" />
+      <created>1577551490110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577551490110</updated>
+      <workItem from="1577551502966" duration="1823000" />
+      <workItem from="1577645449351" duration="3148000" />
+      <workItem from="1577659065499" duration="9000" />
+      <workItem from="1582712413868" duration="25000" />
+      <workItem from="1583231746986" duration="1072000" />
+      <workItem from="1585565603298" duration="1425000" />
+      <workItem from="1585567078918" duration="263000" />
+      <workItem from="1585658714490" duration="4036000" />
+      <workItem from="1585665444356" duration="50000" />
+      <workItem from="1585829047314" duration="2928000" />
+      <workItem from="1585916340853" duration="3724000" />
+      <workItem from="1586253253049" duration="3686000" />
+      <workItem from="1586598460917" duration="245000" />
+      <workItem from="1586599030468" duration="3855000" />
+      <workItem from="1586676015214" duration="3240000" />
+      <workItem from="1586693174095" duration="93000" />
+      <workItem from="1586693328721" duration="9000" />
+      <workItem from="1586695945703" duration="332000" />
+      <workItem from="1586776720351" duration="3175000" />
+      <workItem from="1586788767511" duration="1684000" />
+      <workItem from="1586866205660" duration="3071000" />
+      <workItem from="1587035581842" duration="3453000" />
+      <workItem from="1587209164636" duration="2750000" />
+      <workItem from="1587295664978" duration="6360000" />
+      <workItem from="1587302732858" duration="608000" />
+      <workItem from="1587377064841" duration="3611000" />
+      <workItem from="1587463278023" duration="3126000" />
+      <workItem from="1587466807562" duration="4389000" />
+      <workItem from="1587477296560" duration="1455000" />
+      <workItem from="1588341813060" duration="1014000" />
+      <workItem from="1588507137646" duration="6741000" />
+      <workItem from="1588514063696" duration="64000" />
+      <workItem from="1588580229699" duration="3149000" />
+      <workItem from="1588767806999" duration="3888000" />
+      <workItem from="1588835052208" duration="6450000" />
+      <workItem from="1588946399074" duration="1084000" />
+      <workItem from="1588951253568" duration="454000" />
+      <workItem from="1589010885028" duration="4241000" />
+      <workItem from="1589117206375" duration="7361000" />
+      <workItem from="1589133379845" duration="504000" />
+      <workItem from="1589176089065" duration="3332000" />
+      <workItem from="1589185963164" duration="317000" />
+      <workItem from="1589187480258" duration="4202000" />
+      <workItem from="1589191767824" duration="956000" />
+      <workItem from="1589292304758" duration="3580000" />
+      <workItem from="1589357679518" duration="2479000" />
+      <workItem from="1589872137910" duration="2484000" />
+      <workItem from="1589880982524" duration="3393000" />
+      <workItem from="1589884449887" duration="1302000" />
+      <workItem from="1589886896521" duration="2712000" />
+      <workItem from="1589894457135" duration="5891000" />
+      <workItem from="1589900529744" duration="1529000" />
+      <workItem from="1589979917011" duration="3964000" />
+      <workItem from="1589984136872" duration="5420000" />
+      <workItem from="1590217605740" duration="2499000" />
+      <workItem from="1590220209757" duration="2553000" />
+      <workItem from="1590593295858" duration="1273000" />
+      <workItem from="1590645679932" duration="648000" />
+      <workItem from="1590652465189" duration="685000" />
+      <workItem from="1590766309263" duration="59000" />
+      <workItem from="1626966098141" duration="396000" />
+      <workItem from="1627032261637" duration="393000" />
+      <workItem from="1627039617350" duration="4568000" />
+      <workItem from="1627221782757" duration="4468000" />
+      <workItem from="1627292618712" duration="127000" />
+      <workItem from="1652274759433" duration="2000" />
+      <workItem from="1652274896733" duration="959000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="JUnitTestSuite - 2019.12.28 at 18h 14m 20s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTestSuite - 2019.12.28 at 18h 15m 03s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTestSuite - 2019.12.29 at 21h 37m 20s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTestSuite - 2019.12.29 at 22h 25m 40s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTestSuite - 2019.12.29 at 23h 18m 22s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTestSuite - 2019.12.29 at 23h 19m 16s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JUnitTestSuite - 2020.03.03 at 11h 53m 13s.xml">
+      <configuration name="JUnitTestSuite" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/casper$cASpER.ic" NAME="cASpER Coverage Results" MODIFIED="1574294040175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/casper$JUnitTestSuite.ic" NAME="JUnitTestSuite Coverage Results" MODIFIED="1575921719526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.*</FILTER>
+    </SUITE>
+  </component>
+</project>
