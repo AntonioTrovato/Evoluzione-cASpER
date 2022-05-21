@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9b6a8d4-7f4e-428f-b395-7aee49ce6057" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/libs/casper-1.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/libs/casper-1.1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/patchedPluginXmlFiles/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/patchedPluginXmlFiles/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/resources/main/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/resources/main/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\angel\Desktop\Evoluzione-cASpER\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="291PkyCe8K9gXV3aD61mSbYMOre" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9b6a8d4-7f4e-428f-b395-7aee49ce6057" name="Changes" comment="" />
+      <created>1652277764991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652277764991</updated>
+      <workItem from="1652277766975" duration="16000" />
+      <workItem from="1652543461912" duration="74000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1652543491723">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1652543491723" />
+  </component>
+</project>

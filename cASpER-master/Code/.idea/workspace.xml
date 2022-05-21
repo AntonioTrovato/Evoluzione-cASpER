@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="Prova commit">
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Grafici/HorizontalTraceabilityGraph.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,23 +75,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "C:/Users/angel/Desktop/Evoluzione-cASpER/cASpER-master/Code"
+  }
+}]]></component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
     <option name="FILTER_WHITESPACE" value="false" />
@@ -227,6 +218,7 @@
       <workItem from="1652705984318" duration="3727000" />
       <workItem from="1652783902136" duration="697000" />
       <workItem from="1653121513726" duration="7234000" />
+      <workItem from="1653147812341" duration="2940000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemazione casper2">
       <created>1652277394077</created>
