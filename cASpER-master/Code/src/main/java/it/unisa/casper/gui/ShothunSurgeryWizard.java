@@ -23,7 +23,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ShothunSurgeryWizard extends DialogWrapper {
+public class ShothunSurgeryWizard extends DialogWrapper implements AbstractCodeSmellGUI{
 
 
     private Project project;
@@ -45,7 +45,7 @@ public class ShothunSurgeryWizard extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
         mainPanel = new JPanel();
         radarmaps = new JPanel();
         radarmaps.setLayout(new GridLayout(0, 2));
@@ -106,7 +106,7 @@ public class ShothunSurgeryWizard extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTOR") {
 
             String message;

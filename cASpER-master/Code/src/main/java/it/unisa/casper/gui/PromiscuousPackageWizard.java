@@ -30,7 +30,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
-public class PromiscuousPackageWizard extends DialogWrapper {
+public class PromiscuousPackageWizard extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private PackageBean packageDestra, packageSinistra;
     private JComboBox<String> comboBox, comboBox2;
@@ -59,7 +59,7 @@ public class PromiscuousPackageWizard extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTORING") {
 
             String message;
@@ -90,7 +90,7 @@ public class PromiscuousPackageWizard extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         main = new JPanel();
         main.setPreferredSize(new Dimension(1250, 900));

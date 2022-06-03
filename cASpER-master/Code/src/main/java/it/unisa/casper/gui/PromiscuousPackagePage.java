@@ -23,7 +23,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 import java.util.Vector;
 
-public class PromiscuousPackagePage extends DialogWrapper {
+public class PromiscuousPackagePage extends DialogWrapper implements AbstractCodeSmellGUI{
 
     private RadarMapUtils radarMapUtils;        //roba che serve per le radar map
     private PackageBean packageBeanPP;            //PackageBean sul quale avviene l'analisi
@@ -46,6 +46,8 @@ public class PromiscuousPackagePage extends DialogWrapper {
 
     private boolean errorOccured = false;               //serve per verificare se qualche cosa è andata storta
 
+    private ClassSmellGUIAbstractFactory wizardFactory;
+
     public PromiscuousPackagePage(PackageBean packageBeanPP, List<PackageBean> packages, Project project) {
         super(true);
         this.packageBeanPP = packageBeanPP;
@@ -54,11 +56,12 @@ public class PromiscuousPackagePage extends DialogWrapper {
         setResizable(false);
         init();
         setTitle("PROMISCUOUS PACKAGE PAGE");
+        wizardFactory=new WizardConcreteFactory();
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         radarMapUtils = new RadarMapUtilsAdapter();
 
@@ -135,7 +138,7 @@ public class PromiscuousPackagePage extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             String message;
@@ -160,7 +163,8 @@ public class PromiscuousPackagePage extends DialogWrapper {
                         message = "Error during creation of solution";
                         Messages.showMessageDialog(message, "Error", Messages.getErrorIcon());
                     } else {
-                        PromiscuousPackageWizard promiscuousWizard = new PromiscuousPackageWizard(packageBeanPP, splittedPackages, project);
+                        PromiscuousPackageWizard promiscuousWizard = (PromiscuousPackageWizard) wizardFactory.createPromiscuousPackageGUI(packageBeanPP, splittedPackages, project);
+                        //PromiscuousPackageWizard promiscuousWizard = new PromiscuousPackageWizard(packageBeanPP, splittedPackages, project);
                         promiscuousWizard.show();
                     }
                     close(1);

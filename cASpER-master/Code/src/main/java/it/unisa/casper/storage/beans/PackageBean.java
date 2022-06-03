@@ -1,6 +1,8 @@
 package it.unisa.casper.storage.beans;
 
 import it.unisa.casper.analysis.code_smell.CodeSmell;
+import it.unisa.casper.analysis.code_smell.DetectionVisitor;
+import it.unisa.casper.analysis.code_smell.Visitor;
 import it.unisa.casper.analysis.code_smell_detection.comparator.ComparableBean;
 
 import java.util.ArrayList;
@@ -17,6 +19,7 @@ public class PackageBean implements ComparableBean, Comparable {
     public ClassBeanList classes; // lista delle classi appartenenti al metodo
     private List<CodeSmell> affectedSmell; // lista di smell di cui è affetto il package
     private double similarity; //somiglianza generata durante l'analisi con altri package
+    private Visitor visitor;
 
     /**
      * costruttore
@@ -33,6 +36,7 @@ public class PackageBean implements ComparableBean, Comparable {
             affectedSmell = new ArrayList<CodeSmell>();
         }
         similarity = builder._similarity;
+        visitor=new DetectionVisitor();
     }
 
     /**
@@ -42,7 +46,7 @@ public class PackageBean implements ComparableBean, Comparable {
      * @return true se il package è affetto dallo smell, false altrimenti
      */
     public boolean isAffected(CodeSmell smell) {
-        return smell.affects(this);
+        return smell.accept(visitor,this);
     }
 
     /**

@@ -20,18 +20,13 @@ public class MisplacedClassCodeSmell extends ClassLevelCodeSmell {
     }
 
     /**
-     * Metodo che sancisce la presenza di misplaced class in una classe
-     *
-     * @param aClass ClassBean da passare allo Strategy per effettuare l'analisi
-     * @return true se la classe è affetta da misplaced class, false altrimenti
+     * @param visitor
+     * @param bean
+     * @return
      */
-    public boolean affects(ClassBean aClass) {
-        if (detectionStrategy.isSmelly(aClass)) {
-            this.setIndex(detectionStrategy.getThresold(aClass));
-            aClass.addSmell(this);
-            return true;
-        }
-        return false;
+    @Override
+    public boolean accept(Visitor visitor, ClassBean bean) {
+        return visitor.visit(this,bean);
     }
 
 }

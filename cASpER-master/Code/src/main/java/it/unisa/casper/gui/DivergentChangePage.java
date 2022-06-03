@@ -23,7 +23,7 @@ import java.awt.event.ActionListener;
 import java.lang.reflect.Method;
 import java.util.List;
 
-public class DivergentChangePage  extends DialogWrapper {
+public class DivergentChangePage  extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private List<ClassBean> splittedClasses;
     private ClassBean divergentChangeClass;
@@ -32,9 +32,10 @@ public class DivergentChangePage  extends DialogWrapper {
     private boolean errorOccured;
     private RadarMapUtils radars;
     private JPanel radarmaps;
+    private ClassSmellGUIAbstractFactory wizardFactory;
 
 
-    protected DivergentChangePage(ClassBean divergentChangeClass, @Nullable Project project) {
+    public DivergentChangePage(ClassBean divergentChangeClass, @Nullable Project project) {
         super(project, true);
         this.divergentChangeClass = divergentChangeClass;
         this.project = project;
@@ -42,11 +43,12 @@ public class DivergentChangePage  extends DialogWrapper {
         setResizable(true);
         init();
         setTitle("DIVERGENT CHANGE PAGE");
+        wizardFactory=new WizardConcreteFactory();
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
         radars = new RadarMapUtilsAdapter();
         JPanel radarMap = radars.createRadarMapFromClassBean(divergentChangeClass, "Divergent Change Class Topics");
 
@@ -108,7 +110,7 @@ public class DivergentChangePage  extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             String message;
@@ -127,7 +129,8 @@ public class DivergentChangePage  extends DialogWrapper {
                 if (errorOccured) {
                     Messages.showMessageDialog(message, "Oh!No!", Messages.getErrorIcon());
                 } else {
-                        DivergentChangeWizard divergentChangeWizard = new DivergentChangeWizard(divergentChangeClass, splittedClasses, project);
+                        DivergentChangeWizard divergentChangeWizard = (DivergentChangeWizard) wizardFactory.createDivergentChangeGUI(divergentChangeClass, splittedClasses, project);
+                        //DivergentChangeWizard divergentChangeWizard = new DivergentChangeWizard(divergentChangeClass, splittedClasses, project);
                         divergentChangeWizard.show();
                     }
                     close(0);

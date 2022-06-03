@@ -25,7 +25,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParallelInheritanceWizard  extends DialogWrapper {
+public class ParallelInheritanceWizard  extends DialogWrapper implements AbstractCodeSmellGUI{
 
     private Project project;
     private ClassBean super1, super2;
@@ -35,7 +35,7 @@ public class ParallelInheritanceWizard  extends DialogWrapper {
     private JPanel radarmaps;
     private List<PackageBean> packageBeans;
 
-    protected ParallelInheritanceWizard(ClassBean super1, ClassBean super2, @Nullable Project project,List<PackageBean> systemPackages) {
+    public ParallelInheritanceWizard(ClassBean super1, ClassBean super2, @Nullable Project project,List<PackageBean> systemPackages) {
         super(true);
         this.project = project;
         this.packageBeans = systemPackages;
@@ -49,7 +49,7 @@ public class ParallelInheritanceWizard  extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
         mainPanel = new JPanel();
         radarmaps = new JPanel();
         radarmaps.setLayout(new GridLayout(0, 2));
@@ -140,7 +140,7 @@ public class ParallelInheritanceWizard  extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTOR") {
 
             String message;

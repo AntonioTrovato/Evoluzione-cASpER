@@ -1,6 +1,8 @@
 package it.unisa.casper.storage.beans;
 
 import it.unisa.casper.analysis.code_smell.CodeSmell;
+import it.unisa.casper.analysis.code_smell.DetectionVisitor;
+import it.unisa.casper.analysis.code_smell.Visitor;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,6 +26,7 @@ public class MethodBean implements Comparable {
     private boolean isDefaultCostructor;// boolean che stabilisce se il costruttore utilizzato è quello di default
     private List<CodeSmell> affectedSmell; // lista di smell dai quali è affetto il metodo
     private String visibility; //visibilità del metodo
+    private Visitor visitor;
 
     /**
      * costruttore
@@ -47,6 +50,7 @@ public class MethodBean implements Comparable {
             affectedSmell = new ArrayList<>();
         }
         visibility = builder._visibility;
+        visitor=new DetectionVisitor();
     }
 
     /**
@@ -56,7 +60,7 @@ public class MethodBean implements Comparable {
      * @return true se il metodo è affetto,false altrimenti
      */
     public boolean isAffected(CodeSmell smell) {
-        return smell.affects(this);
+        return smell.accept(visitor,this);
     }
 
     /**

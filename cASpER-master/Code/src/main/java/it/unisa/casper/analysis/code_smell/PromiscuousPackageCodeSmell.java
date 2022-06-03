@@ -1,6 +1,7 @@
 package it.unisa.casper.analysis.code_smell;
 
 import it.unisa.casper.analysis.code_smell_detection.strategy.PackageSmellDetectionStrategy;
+import it.unisa.casper.storage.beans.ClassBean;
 import it.unisa.casper.storage.beans.PackageBean;
 
 /**
@@ -20,17 +21,12 @@ public class PromiscuousPackageCodeSmell extends PackageLevelCodeSmell {
     }
 
     /**
-     * Metodo che sancisce la presenza di promiscuous package in un package
-     *
-     * @param aPackage package da passare allo strategy per l'analisi
-     * @return true se il package è affetto da promiscuous package, false altrimenti
+     * @param visitor
+     * @param bean
+     * @return
      */
-    public boolean affects(PackageBean aPackage) {
-        if (detectionStrategy.isSmelly(aPackage)) {
-            this.setIndex(detectionStrategy.getThresold(aPackage));
-            aPackage.addSmell(this);
-            return true;
-        }
-        return false;
+    @Override
+    public boolean accept(Visitor visitor, PackageBean bean) {
+        return visitor.visit(this,bean);
     }
 }

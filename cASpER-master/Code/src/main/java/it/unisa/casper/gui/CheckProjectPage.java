@@ -81,8 +81,11 @@ public class CheckProjectPage extends DialogWrapper {
     private double sogliaCoseno;
     private ArrayList<Integer> sogliaDipendenze;
 
+    private ClassSmellGUIAbstractFactory pageFactory;
+
     public CheckProjectPage(Project currentProj, List<PackageBean> packages, double sogliaCoseno, ArrayList<Integer> sogliaDipendenze, String algorithm) {
         super(true);
+        pageFactory= new PageConcreteFactory();
         smellName = new ArrayList<String>();
         smellName.add("Feature Envy");
         smellName.add("Misplaced Class");
@@ -568,7 +571,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("blob")) {
                         for (ClassBean c : blobList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper blob = new BlobPage(c, currentProject);
+                                DialogWrapper blob = (DialogWrapper) pageFactory.createBlobGUI(c,null,currentProject);
+                                //DialogWrapper blob = new BlobPage(c, currentProject);
                                 blob.show();
                             }
                         }
@@ -577,7 +581,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("feature envy")) {
                         for (MethodBean m : featureEnvyList) {
                             if (m.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper feat = new FeatureEnvyPage(m, currentProject, packages);
+                                DialogWrapper feat = (DialogWrapper) pageFactory.createFeatureEnvyGUI(m,currentProject,packages);
+                                //DialogWrapper feat = new FeatureEnvyPage(m, currentProject, packages);
                                 feat.show();
                             }
                         }
@@ -586,7 +591,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("promiscuous package")) {
                         for (PackageBean p : promiscuousPackageList) {
                             if (p.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper prom = new PromiscuousPackagePage(p, packages, currentProject);
+                                DialogWrapper prom = (DialogWrapper) pageFactory.createPromiscuousPackageGUI(p, packages, currentProject);
+                                //DialogWrapper prom = new PromiscuousPackagePage(p, packages, currentProject);
                                 prom.show();
                             }
                         }
@@ -595,7 +601,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("misplaced class")) {
                         for (ClassBean c : misplacedClassList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper mis = new MisplacedClassPage(c, currentProject);
+                                DialogWrapper mis = (DialogWrapper) pageFactory.createMisplacedClassGUI(c, currentProject);
+                                //DialogWrapper mis = new MisplacedClassPage(c, currentProject);
                                 mis.show();
                             }
                         }
@@ -604,7 +611,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("Divergent Change")) {
                         for (ClassBean c : divergentChangeList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper divergentChange = new DivergentChangePage(c, currentProject);
+                                DialogWrapper divergentChange = (DialogWrapper) pageFactory.createDivergentChangeGUI(c, null,currentProject);
+                                //DialogWrapper divergentChange = new DivergentChangePage(c, currentProject);
                                 divergentChange.show();
                             }
                         }
@@ -613,7 +621,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("Shotgun Surgery")) {
                         for (ClassBean c : shotgunSurgeryList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper shotgunSurgery = new ShotgunSurgeryPage(c, currentProject);
+                                DialogWrapper shotgunSurgery = (DialogWrapper) pageFactory.createShotgunSurgeryGUI(c, currentProject);
+                                //DialogWrapper shotgunSurgery = new ShotgunSurgeryPage(c, currentProject);
                                 shotgunSurgery.show();
                             }
                         }
@@ -622,7 +631,8 @@ public class CheckProjectPage extends DialogWrapper {
                     if (whereToSearch.equalsIgnoreCase("Parallel Inheritance")) {
                         for (ClassBean c : parallelInheritanceList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
-                                DialogWrapper parallelInheritance = new ParallelInheritancePage(c, currentProject, packages);
+                                DialogWrapper parallelInheritance = (DialogWrapper) pageFactory.createParallelInheritanceGUI(c,null, currentProject, packages);
+                                //DialogWrapper parallelInheritance = new ParallelInheritancePage(c, currentProject, packages);
                                 parallelInheritance.show();
                             }
                         }

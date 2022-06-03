@@ -20,7 +20,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-public class ParallelInheritancePage  extends DialogWrapper {
+public class ParallelInheritancePage  extends DialogWrapper implements AbstractCodeSmellGUI{
 
     private ClassBean parallelIheritanceClass, superClass1, superClass2;
     private Project project;
@@ -28,6 +28,7 @@ public class ParallelInheritancePage  extends DialogWrapper {
     private RadarMapUtils radars;
     private JPanel radarmaps;
     private List<PackageBean> packageBeans;
+    private ClassSmellGUIAbstractFactory wizardPage;
 
     protected ParallelInheritancePage(ClassBean PI, @Nullable Project project,List<PackageBean> systemPackages) {
         super(project);
@@ -40,11 +41,12 @@ public class ParallelInheritancePage  extends DialogWrapper {
         setResizable(true);
         init();
         setTitle("PARALLEL INHERITANCE PAGE");
+        wizardPage=new WizardConcreteFactory();
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel(){
+    public JComponent createCenterPanel(){
         mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.X_AXIS));
         radarmaps = new JPanel();
@@ -100,7 +102,7 @@ public class ParallelInheritancePage  extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             String message;
@@ -110,8 +112,8 @@ public class ParallelInheritancePage  extends DialogWrapper {
 
 
 
-
-                ParallelInheritanceWizard parallelInheritanceWizard = new ParallelInheritanceWizard(superClass1, superClass2, project, packageBeans);
+                ParallelInheritanceWizard parallelInheritanceWizard = (ParallelInheritanceWizard) wizardPage.createParallelInheritanceGUI(superClass1, superClass2, project, packageBeans);
+                //ParallelInheritanceWizard parallelInheritanceWizard = new ParallelInheritanceWizard(superClass1, superClass2, project, packageBeans);
                 parallelInheritanceWizard.show();
                 close(0);
             }

@@ -15,12 +15,7 @@ public class ParallelInheritanceCodeSmell  extends ClassLevelCodeSmell{
     }
 
     @Override
-    public boolean affects(ClassBean aClass) {
-        if (detectionStrategy.isSmelly(aClass)) {
-            this.setIndex(detectionStrategy.getThresold(aClass));
-            aClass.addSmell(this);
-            return true;
-        }
+    public boolean accept(Visitor visitor, ClassBean bean) {
         return false;
     }
 }

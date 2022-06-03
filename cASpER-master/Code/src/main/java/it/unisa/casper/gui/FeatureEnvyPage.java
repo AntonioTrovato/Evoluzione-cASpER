@@ -24,7 +24,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 import java.util.Vector;
 
-public class FeatureEnvyPage extends DialogWrapper {
+public class FeatureEnvyPage extends DialogWrapper implements AbstractCodeSmellGUI{
 
     private Project project;
     private MethodBean featureEnvyBean;
@@ -38,6 +38,7 @@ public class FeatureEnvyPage extends DialogWrapper {
     private RadarMapUtils radarMapGenerator;
     private JTable table;
     private JPanel level2Panel;
+    private ClassSmellGUIAbstractFactory wizardFactory;
 
     protected FeatureEnvyPage(boolean canBeParent) {
         super(canBeParent);
@@ -52,11 +53,13 @@ public class FeatureEnvyPage extends DialogWrapper {
         setResizable(false);
         init();
         setTitle("FEATURE ENVY ANALYSIS");
+        wizardFactory=new WizardConcreteFactory();
+
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
         //main panel init
         centerPanel = new JPanel();
         centerPanel.setBorder(JBUI.Borders.empty(5));
@@ -140,12 +143,13 @@ public class FeatureEnvyPage extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             @Override
             protected void doAction(ActionEvent actionEvent) {
-                FeatureEnvyWizard featureEnvyWizard = new FeatureEnvyWizard(featureEnvyBean, project, packageBeans);
+                FeatureEnvyWizard featureEnvyWizard = (FeatureEnvyWizard) wizardFactory.createFeatureEnvyGUI(featureEnvyBean, project, packageBeans);
+                //FeatureEnvyWizard featureEnvyWizard = new FeatureEnvyWizard(featureEnvyBean, project, packageBeans);
                 featureEnvyWizard.show();
                 close(0);
             }

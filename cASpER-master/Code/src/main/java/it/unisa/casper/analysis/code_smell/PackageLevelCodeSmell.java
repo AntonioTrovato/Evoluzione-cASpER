@@ -1,6 +1,7 @@
 package it.unisa.casper.analysis.code_smell;
 
 import it.unisa.casper.analysis.code_smell_detection.strategy.PackageSmellDetectionStrategy;
+import it.unisa.casper.storage.beans.ClassBean;
 import it.unisa.casper.storage.beans.PackageBean;
 
 /**
@@ -21,13 +22,7 @@ public abstract class PackageLevelCodeSmell extends CodeSmell<PackageBean> {
         super(name, detectionStrategy, algoritmsUsed);
     }
 
-    /**
-     * Metodo che stabilisce la presenza di uno smell in un package
-     *
-     * @param aPackage PackageBean da passare allo Strategy per effettuare l'analisi
-     * @return true se il package è affetto da smell, false altrimenti
-     */
-    public abstract boolean affects(PackageBean aPackage);
+    public abstract boolean accept(Visitor visitor, PackageBean bean);
 
 }
 

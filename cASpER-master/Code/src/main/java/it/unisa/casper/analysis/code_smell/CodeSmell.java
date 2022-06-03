@@ -11,7 +11,7 @@ import java.util.HashMap;
  * @param <T> rappresenta un generico detection strategy, specificato caso per caso nelle classi figlie.
  */
 
-public abstract class CodeSmell<T> {
+public abstract class CodeSmell<T> implements Visitable<T> {
     /**
      * Le stringhe sottostanti dichiarano i nomi (invariabili) degli smell presi in esame
      * da questo plug-in.
@@ -43,13 +43,8 @@ public abstract class CodeSmell<T> {
         index = new HashMap<String, Double>();
     }
 
-    /**
-     * Metodo che stabilisce la presenza di uno smell in un component
-     *
-     * @param component generico componente da analizzare
-     * @return true se il component è affetto da smell,false altrimenti
-     */
-    public abstract boolean affects(T component);
+
+    public abstract boolean accept(Visitor visitor,T bean);
 
     /**
      * override del toString per consentire il ritorno del nome dello smell

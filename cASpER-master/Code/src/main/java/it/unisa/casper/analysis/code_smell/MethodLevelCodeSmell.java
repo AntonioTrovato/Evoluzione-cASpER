@@ -1,6 +1,7 @@
 package it.unisa.casper.analysis.code_smell;
 
 import it.unisa.casper.analysis.code_smell_detection.strategy.MethodSmellDetectionStrategy;
+import it.unisa.casper.storage.beans.ClassBean;
 import it.unisa.casper.storage.beans.MethodBean;
 
 /**
@@ -26,6 +27,6 @@ public abstract class MethodLevelCodeSmell extends CodeSmell<MethodBean> {
      * @param aMethod MethodBean da passare allo strategy per effettuare l'analisi
      * @return true se il metodo è affetto da smell, false altrimenti
      */
-    public abstract boolean affects(MethodBean aMethod);
+    public abstract boolean accept(Visitor visitor, MethodBean bean);
 
 }

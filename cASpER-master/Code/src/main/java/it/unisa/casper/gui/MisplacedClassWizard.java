@@ -26,7 +26,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class MisplacedClassWizard extends DialogWrapper {
+public class MisplacedClassWizard extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private Project project;
     private ClassBean smellClass;
@@ -54,7 +54,7 @@ public class MisplacedClassWizard extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         contentPanel = new JPanel(); // pannello principale
         contentPanel.setLayout(new BorderLayout(0, 0));
@@ -171,7 +171,7 @@ public class MisplacedClassWizard extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTOR") {
 
             String message;

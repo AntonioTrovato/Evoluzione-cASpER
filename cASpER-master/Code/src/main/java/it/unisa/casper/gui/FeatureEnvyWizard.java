@@ -31,7 +31,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class FeatureEnvyWizard extends DialogWrapper {
+public class FeatureEnvyWizard extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private Project project;
     private List<PackageBean> packageBeans;
@@ -61,7 +61,7 @@ public class FeatureEnvyWizard extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         contentPanel = new JPanel(); // pannello principale
         contentPanel.setLayout(new BorderLayout(0, 0));
@@ -176,7 +176,7 @@ public class FeatureEnvyWizard extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTOR") {
 
             String message;

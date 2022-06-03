@@ -17,13 +17,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
-public class ShotgunSurgeryPage  extends DialogWrapper {
+public class ShotgunSurgeryPage  extends DialogWrapper implements AbstractCodeSmellGUI{
 
     private ClassBean shotgunSurgeryClass;
     private Project project;
     private JPanel mainPanel;
     private RadarMapUtils radars;
     private JPanel radarmaps;
+    private ClassSmellGUIAbstractFactory wizardFactory;
 
     protected ShotgunSurgeryPage(ClassBean shotgunSurgeryClass, @Nullable Project project) {
         super(project, true);
@@ -33,11 +34,12 @@ public class ShotgunSurgeryPage  extends DialogWrapper {
         setResizable(true);
         init();
         setTitle("SHOTGUN SURGERY PAGE");
+        wizardFactory=new WizardConcreteFactory();
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         radarmaps = new JPanel();
         radarmaps.setLayout(new GridLayout(0, 1));
@@ -109,14 +111,15 @@ public class ShotgunSurgeryPage  extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             String message;
 
             @Override
             protected void doAction(ActionEvent actionEvent) {
-                ShothunSurgeryWizard shothunSurgeryWizard = new ShothunSurgeryWizard(shotgunSurgeryClass, project);
+                ShothunSurgeryWizard shothunSurgeryWizard = (ShothunSurgeryWizard) wizardFactory.createShotgunSurgeryGUI(shotgunSurgeryClass, project);
+                //ShothunSurgeryWizard shothunSurgeryWizard = new ShothunSurgeryWizard(shotgunSurgeryClass, project);
                 shothunSurgeryWizard.show();
                 close(0);
             }

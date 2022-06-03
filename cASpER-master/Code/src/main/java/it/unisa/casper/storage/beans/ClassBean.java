@@ -1,6 +1,8 @@
 package it.unisa.casper.storage.beans;
 
 import it.unisa.casper.analysis.code_smell.CodeSmell;
+import it.unisa.casper.analysis.code_smell.DetectionVisitor;
+import it.unisa.casper.analysis.code_smell.Visitor;
 import it.unisa.casper.analysis.code_smell_detection.comparator.ComparableBean;
 
 import java.util.ArrayList;
@@ -30,6 +32,7 @@ public class ClassBean implements ComparableBean, Comparable {
     private List<MethodBean> shotgunSurgeryHittedMethods; //lista dei metodi colpiti dallo shotgun surgery
     private List<List<MethodBean>> divergentChangeMethodsSet; //lista di insiemi di metodi del divergent change
     private ClassBean parallelInheritanceClass; //classe aggiunta con il parallel inheritance
+    private Visitor visitor;
 
     /**
      * Costruttore
@@ -54,6 +57,7 @@ public class ClassBean implements ComparableBean, Comparable {
             affectedSmell = new ArrayList<>();
         }
         similarity = builder._similarity;
+        visitor=new DetectionVisitor();
     }
 
     /**
@@ -63,7 +67,7 @@ public class ClassBean implements ComparableBean, Comparable {
      * @return true se la classe è affetta dallo smell, false altrimenti
      */
     public boolean isAffected(CodeSmell smell) {
-        return smell.affects(this);
+        return smell.accept(visitor,this);
     }
 
     ;

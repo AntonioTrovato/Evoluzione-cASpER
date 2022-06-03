@@ -20,12 +20,6 @@ public abstract class ClassLevelCodeSmell extends CodeSmell<ClassBean> {
         super(name, detectionStrategy, algoritmsUsed);
     }
 
-    /**
-     * Metodo che stabilisce la presenza di un code smell in una classe
-     *
-     * @param aClass ClassBean da passare allo Strategy per effettuare l'analisi
-     * @return true se la classe è affetta da smell, false altrimenti
-     */
-    public abstract boolean affects(ClassBean aClass);
+    public abstract boolean accept(Visitor visitor,ClassBean bean);
 
 }

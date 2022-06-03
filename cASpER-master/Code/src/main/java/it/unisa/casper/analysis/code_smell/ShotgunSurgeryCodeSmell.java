@@ -14,13 +14,13 @@ public class ShotgunSurgeryCodeSmell extends ClassLevelCodeSmell{
         super(SHOTGUN_SURGERY, detectionStrategy, algoritmsUsed);
     }
 
+    /**
+     * @param visitor
+     * @param bean
+     * @return
+     */
     @Override
-    public boolean affects(ClassBean aClass) {
-        if (detectionStrategy.isSmelly(aClass)) {
-            this.setIndex(detectionStrategy.getThresold(aClass));
-            aClass.addSmell(this);
-            return true;
-        }
-        return false;
+    public boolean accept(Visitor visitor, ClassBean bean) {
+        return visitor.visit(this,bean);
     }
 }

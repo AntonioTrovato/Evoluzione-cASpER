@@ -20,7 +20,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.Vector;
 
-public class MisplacedClassPage extends DialogWrapper {
+public class MisplacedClassPage extends DialogWrapper implements AbstractCodeSmellGUI{
 
     private Project project;
     private ClassBean misplacedClassBean;
@@ -33,6 +33,7 @@ public class MisplacedClassPage extends DialogWrapper {
     private RadarMapUtils radarMapGenerator;
     private JTable table;
     private JPanel level2Panel;
+    private ClassSmellGUIAbstractFactory wizardFactory;
 
     protected MisplacedClassPage(boolean canBeParent) {
         super(canBeParent);
@@ -46,11 +47,12 @@ public class MisplacedClassPage extends DialogWrapper {
         setResizable(false);
         init();
         setTitle("MISPLACED CLASS ANALYSIS");
+        wizardFactory=new WizardConcreteFactory();
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
         //main panel init
         centerPanel = new JPanel();
         centerPanel.setBorder(JBUI.Borders.empty(5));
@@ -138,12 +140,13 @@ public class MisplacedClassPage extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             @Override
             protected void doAction(ActionEvent actionEvent) {
-                MisplacedClassWizard misplacedClassWizard = new MisplacedClassWizard(misplacedClassBean, project);
+                MisplacedClassWizard misplacedClassWizard = (MisplacedClassWizard) wizardFactory.createMisplacedClassGUI(misplacedClassBean, project);
+                //MisplacedClassWizard misplacedClassWizard = new MisplacedClassWizard(misplacedClassBean, project);
                 misplacedClassWizard.show();
                 close(0);
             }

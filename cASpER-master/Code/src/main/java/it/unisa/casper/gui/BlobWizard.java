@@ -29,7 +29,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
-public class BlobWizard extends DialogWrapper {
+public class BlobWizard extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private ClassBean classeDestra, classeSinistra;
     private JComboBox<String> comboBox, comboBox2;
@@ -42,6 +42,7 @@ public class BlobWizard extends DialogWrapper {
     private Project project;
     private boolean errorOccured;
 
+
     public BlobWizard(ClassBean c, List<ClassBean> splitting, Project project) {
         super(true);
         this.blobClassBean = c;
@@ -53,11 +54,12 @@ public class BlobWizard extends DialogWrapper {
         setResizable(false);
         init();
         setTitle("BLOB REFACTORING");
+
     }
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTORING") {
 
             String message;
@@ -90,7 +92,7 @@ public class BlobWizard extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         main = new JPanel();
         main.setPreferredSize(new Dimension(1250, 900));

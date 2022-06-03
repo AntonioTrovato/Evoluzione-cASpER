@@ -23,7 +23,7 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 import java.util.Vector;
 
-public class BlobPage extends DialogWrapper {
+public class BlobPage extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private RadarMapUtils radarMapUtils;        //roba che serve per le radar map
     private ClassBean classBeanBlob;            //ClassBean sul quale avviene l'analisi
@@ -41,6 +41,8 @@ public class BlobPage extends DialogWrapper {
     private JPanel panelGrid2;                  //panel inserito nella seconda cella del gridLayout
     private JBTable table;                      //tabella dove sono visualizzati i codeSmell
 
+    private ClassSmellGUIAbstractFactory wizardFactory;
+
     private boolean errorOccured;               //serve per determinare se qualcosa è andato storto
 
     public BlobPage(ClassBean classBeanBlob, Project project) {
@@ -51,11 +53,12 @@ public class BlobPage extends DialogWrapper {
         setResizable(false);
         init();
         setTitle("BLOB PAGE");
+        wizardFactory=new WizardConcreteFactory();
     }
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
 
         radarMapUtils = new RadarMapUtilsAdapter();
 
@@ -144,7 +147,7 @@ public class BlobPage extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("FIND SOLUTION") {
 
             String message;
@@ -173,7 +176,8 @@ public class BlobPage extends DialogWrapper {
                         message = "Error during creation of solution";
                         Messages.showMessageDialog(message, "Error", Messages.getErrorIcon());
                     } else {
-                        BlobWizard blobWizardMock = new BlobWizard(classBeanBlob, splittedClasses, project);
+                        BlobWizard blobWizardMock = (BlobWizard) wizardFactory.createBlobGUI(classBeanBlob, splittedClasses, project);
+                        //BlobWizard blobWizardMock = new BlobWizard(classBeanBlob, splittedClasses, project);
                         blobWizardMock.show();
                     }
                     close(0);

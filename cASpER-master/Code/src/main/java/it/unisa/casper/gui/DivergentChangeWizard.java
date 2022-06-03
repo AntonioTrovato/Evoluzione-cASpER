@@ -19,7 +19,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
 
-public class DivergentChangeWizard extends DialogWrapper {
+public class DivergentChangeWizard extends DialogWrapper implements AbstractCodeSmellGUI {
 
     private Project project;
     private ClassBean classeAffetta;
@@ -29,7 +29,7 @@ public class DivergentChangeWizard extends DialogWrapper {
     private RadarMapUtils radars;
     private JPanel radarmaps;
 
-    protected DivergentChangeWizard(ClassBean classeAffetta, List<ClassBean> splittedClasses, Project project) {
+    public DivergentChangeWizard(ClassBean classeAffetta, List<ClassBean> splittedClasses, Project project) {
         super(true);
         this.classeAffetta = classeAffetta;
         this.project = project;
@@ -42,7 +42,7 @@ public class DivergentChangeWizard extends DialogWrapper {
 
     @Nullable
     @Override
-    protected JComponent createCenterPanel() {
+    public JComponent createCenterPanel() {
         mainPanel = new JPanel();
         radarmaps = new JPanel();
         radarmaps.setLayout(new GridLayout(0, 1+classeAffetta.getDivergentChangeMethodsSet().size()));
@@ -99,7 +99,7 @@ public class DivergentChangeWizard extends DialogWrapper {
 
     @NotNull
     @Override
-    protected Action[] createActions() {
+    public Action[] createActions() {
         Action okAction = new DialogWrapperAction("REFACTOR") {
 
             String message;

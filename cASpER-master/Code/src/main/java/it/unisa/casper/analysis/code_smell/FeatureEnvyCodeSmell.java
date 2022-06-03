@@ -1,6 +1,7 @@
 package it.unisa.casper.analysis.code_smell;
 
 import it.unisa.casper.analysis.code_smell_detection.strategy.MethodSmellDetectionStrategy;
+import it.unisa.casper.storage.beans.ClassBean;
 import it.unisa.casper.storage.beans.MethodBean;
 
 /**
@@ -21,18 +22,15 @@ public class FeatureEnvyCodeSmell extends MethodLevelCodeSmell {
     }
 
     /**
-     * Metodo che sancisce la presenza di feature envy in una classe
-     *
-     * @param aMethod MethodBean da passare allo strategy per effettuare l'analisi
-     * @return true se il metodo è affetto da feature envy, false altrimenti
+     * @param visitor
+     * @param bean
+     * @return
      */
-    public boolean affects(MethodBean aMethod) {
-        if (detectionStrategy.isSmelly(aMethod)) {
-            this.setIndex(detectionStrategy.getThresold(aMethod));
-            aMethod.addSmell(this);
-            return true;
-        }
-        return false;
+    @Override
+    public boolean accept(Visitor visitor, MethodBean bean) {
+        return visitor.visit(this,bean);
     }
+
+
 
 }
