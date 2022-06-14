@@ -218,6 +218,7 @@ public class PsiParser implements Parser {
         ArrayList<ClassBean> list = new ArrayList<>();
         name = psiPackage.getQualifiedName();
 
+
         for (PsiClass psiClass : psiPackage.getClasses()) {
             textContent.append(psiClass.getContext().getText());
         }
@@ -320,6 +321,32 @@ public class PsiParser implements Parser {
             }
         }
         builder.setImports(imports);
+
+        String classeEstesa=null;
+        //Ottengo la classe estesa
+        PsiReferenceList listExtendsClass=psiClass.getExtendsList();
+        if(listExtendsClass!=null) {
+            PsiJavaCodeReferenceElement[] elements = listExtendsClass.getReferenceElements();
+            if(elements.length>0){
+                classeEstesa=elements[0].getQualifiedName();
+            }
+        }
+        builder.setClasseEstesa(classeEstesa);
+        ArrayList<String> classiImplementate = null;
+        //Ottengo le classi implementate
+        PsiReferenceList listImplementsClass=psiClass.getImplementsList();
+        if(listImplementsClass!=null) {
+            PsiJavaCodeReferenceElement[] elements = listImplementsClass.getReferenceElements();
+            if(elements.length>0){
+                classiImplementate=new ArrayList<String>();
+                for (i=0;i<elements.length;i++)
+                    classiImplementate.add(elements[i].getQualifiedName());
+            }
+        }
+        builder.setClassiImplementate(classiImplementate);
+
+
+
         return builder.build();
     }
 

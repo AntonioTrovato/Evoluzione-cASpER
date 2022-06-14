@@ -24,6 +24,8 @@ public abstract class CodeSmell<T> implements Visitable<T> {
     public static final String SHOTGUN_SURGERY = "Shotgun Surgery";
     public static final String PARALLEL_INHERITANCE = "Parallel Inheritance";
 
+    public static final String SPAGHETTI_CODE= "Spaghetti Code";
+
     protected String smellName;
     protected CodeSmellDetectionStrategy detectionStrategy;
     protected String algoritmsUsed;

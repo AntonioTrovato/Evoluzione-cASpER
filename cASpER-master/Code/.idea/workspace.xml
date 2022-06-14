@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="Prova commit" />
+=======
+    <list default="true" id="47afe1f5-89a3-48a7-a848-fb15bcd093ed" name="Default Changelist" comment="Prova commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/SpaghettiCodeSmell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/ClassBean$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/ClassBean$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/ClassBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/ClassBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/MethodBean$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/MethodBean$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/MethodBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/storage/beans/MethodBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/ClassBean$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/ClassBean$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/ClassBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/ClassBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/MethodBean$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/MethodBean$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/MethodBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/storage/beans/MethodBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/casper-1.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/casper-1.1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/CodeSmell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/CodeSmell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/DetectionVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/DetectionVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/parser/PsiParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/parser/PsiParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/storage/beans/ClassBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/storage/beans/ClassBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/storage/beans/MethodBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/storage/beans/MethodBean.java" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +71,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -71,6 +100,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -84,6 +114,27 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "WebServerToolWindowFactoryState": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/angel/Desktop/Evoluzione-cASpER/cASpER-master/Code",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+>>>>>>> Stashed changes
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
     <option name="FILTER_WHITESPACE" value="false" />
@@ -92,7 +143,19 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.JUnitTestSuite">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.unisa.casper.analysis.code_smell" />
+      <recent name="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.casper2">
     <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.TestRunner" />
       <module name="casper.test" />
@@ -130,6 +193,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StructuralSpaghettiCodeStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casper.test" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StructuralSpaghettiCodeStrategyTest.isSmelly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casper.test" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategyTest" />
+      <option name="METHOD_NAME" value="isSmelly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="MANIFEST" />
       <option name="TEST_OBJECT" value="class" />
@@ -142,14 +238,16 @@
       <item itemvalue="Gradle.casper" />
       <item itemvalue="Gradle.casper2" />
       <item itemvalue="Gradle.Code [dependencies]" />
+      <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
+      <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest.isSmelly" />
       <item itemvalue="JUnit.JUnitTestSuite" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
+        <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest.isSmelly" />
         <item itemvalue="JUnit.JUnitTestSuite" />
         <item itemvalue="Application.TestRunner" />
-        <item itemvalue="JUnit.JUnitTestSuite" />
-        <item itemvalue="JUnit.JUnitTestSuite" />
         <item itemvalue="JUnit.JUnitTestSuite" />
       </list>
     </recent_temporary>
@@ -257,8 +355,17 @@
       <workItem from="1654206986652" duration="506000" />
       <workItem from="1654264408489" duration="632000" />
       <workItem from="1654293349609" duration="2597000" />
+<<<<<<< Updated upstream
       <workItem from="1655199304028" duration="3278000" />
       <workItem from="1655204164198" duration="465000" />
+=======
+      <workItem from="1654473094483" duration="63000" />
+      <workItem from="1654794771030" duration="32000" />
+      <workItem from="1654854790015" duration="1889000" />
+      <workItem from="1654983371171" duration="449000" />
+      <workItem from="1655142502102" duration="53000" />
+      <workItem from="1655194557492" duration="18747000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="Sistemazione casper2">
       <created>1652277394077</created>

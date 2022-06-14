@@ -13,4 +13,5 @@ public interface Visitor {
     boolean visit(ParallelInheritanceCodeSmell smell, ClassBean bean);
     boolean visit(PromiscuousPackageCodeSmell smell, PackageBean bean);
     boolean visit(ShotgunSurgeryCodeSmell smell, ClassBean bean);
+    boolean visit(SpaghettiCodeSmell spaghettiCodeSmell, ClassBean bean);
 }

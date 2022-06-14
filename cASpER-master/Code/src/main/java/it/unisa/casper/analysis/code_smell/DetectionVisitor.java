@@ -109,4 +109,20 @@ public class DetectionVisitor  implements Visitor{
         }
         return false;
     }
+
+    /**
+     * @param smell
+     * @param bean
+     * @return
+     */
+    @Override
+    public boolean visit(SpaghettiCodeSmell smell, ClassBean bean) {
+        if (smell.detectionStrategy.isSmelly(bean)) {
+            smell.setIndex(smell.detectionStrategy.getThresold(bean));
+            bean.addSmell(smell);
+            return true;
+        }
+        return false;
+    }
+
 }

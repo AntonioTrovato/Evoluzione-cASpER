@@ -28,6 +28,7 @@ public class MethodBean implements Comparable {
     private String visibility; //visibilità del metodo
     private Visitor visitor;
 
+
     /**
      * costruttore
      *
@@ -51,6 +52,7 @@ public class MethodBean implements Comparable {
         }
         visibility = builder._visibility;
         visitor=new DetectionVisitor();
+
     }
 
     /**
@@ -297,6 +299,7 @@ public class MethodBean implements Comparable {
         private boolean _isDefaultCostructor;
         private List<CodeSmell> _affectedSmell;
         private String _visibility;
+
 
         /**
          * setter

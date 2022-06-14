@@ -17,6 +17,7 @@ public class ClassBean implements ComparableBean, Comparable {
     private String fullQualifiedName; // obbligatorio, full qualified name della classe
     private String textContent; // obbligatorio contenuto testuale della classe
     public InstanceVariableBeanList instanceVariables; // lista di variabili di istanza appartenenti alla classe
+
     public MethodBeanList methods; // lista di metodi appartenenti alla classe
     private List<String> imports; // lista degli import della classe
     private int LOC; //line of code
@@ -33,6 +34,10 @@ public class ClassBean implements ComparableBean, Comparable {
     private List<List<MethodBean>> divergentChangeMethodsSet; //lista di insiemi di metodi del divergent change
     private ClassBean parallelInheritanceClass; //classe aggiunta con il parallel inheritance
     private Visitor visitor;
+
+    private String classeEstesa;
+
+    private ArrayList<String> classiImplementate;
 
     /**
      * Costruttore
@@ -58,6 +63,8 @@ public class ClassBean implements ComparableBean, Comparable {
         }
         similarity = builder._similarity;
         visitor=new DetectionVisitor();
+        classeEstesa=builder._classeEstesa;
+        classiImplementate=builder._classiImplementate;
     }
 
     /**
@@ -117,6 +124,9 @@ public class ClassBean implements ComparableBean, Comparable {
 
     //---------------------------------------------------------------
 
+    public ArrayList<String> getClassiImplementate() {return classiImplementate;}
+
+    public String getClasseEstesa() {return classeEstesa;}
     /***
      * getter
      * @return full qualified name della classe
@@ -300,6 +310,8 @@ public class ClassBean implements ComparableBean, Comparable {
         return similarity;
     }
 
+    public void setClasseEstesa(String classeEstesa){this.classeEstesa=classeEstesa;}
+
     /**
      * setter
      *
@@ -345,6 +357,8 @@ public class ClassBean implements ComparableBean, Comparable {
                 ", entityClassUsage=" + entityClassUsage +
                 ", pathToFile='" + pathToFile + '\'' +
                 ", affectedSmell=" + affectedSmell +
+                ", classeEstesa=" + classeEstesa +
+                ", classiImplementate=" + classiImplementate.toString() +
                 '}';
     }
 
@@ -365,7 +379,8 @@ public class ClassBean implements ComparableBean, Comparable {
                 Objects.equals(textContent, classBean.textContent) &&
                 Objects.equals(superclass, classBean.superclass) &&
                 Objects.equals(belongingPackage, classBean.belongingPackage) &&
-                Objects.equals(pathToFile, classBean.pathToFile);
+                Objects.equals(pathToFile, classBean.pathToFile) &&
+                Objects.equals(classeEstesa,classBean.classeEstesa);
     }
 
     public int compareTo(Object pClassBean) {
@@ -390,6 +405,20 @@ public class ClassBean implements ComparableBean, Comparable {
         private String _pathToFile;
         private List<CodeSmell> _affectedSmell;
         private double _similarity;
+
+        private String _classeEstesa;
+
+        private ArrayList<String> _classiImplementate;
+
+        public Builder setClassiImplementate(ArrayList<String> classiImplementate){
+            _classiImplementate=classiImplementate;
+            return this;
+        }
+
+        public Builder setClasseEstesa(String classeEstesa){
+            _classeEstesa=classeEstesa;
+            return this;
+        }
 
         /**
          * setter
