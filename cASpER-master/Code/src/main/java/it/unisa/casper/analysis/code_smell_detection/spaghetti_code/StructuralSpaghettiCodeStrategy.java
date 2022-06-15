@@ -20,13 +20,14 @@ public class StructuralSpaghettiCodeStrategy implements ClassSmellDetectionStrat
     public boolean isSmelly(ClassBean pClass) {
         boolean bean = true;
         //1 Verifico se la classe non utilizza l'ereditarieta
-        if(pClass.getClasseEstesa()!=null){
+        if(pClass.getClasseEstesa()==null){
             for (MethodBean method : pClass.getMethodList()) {
                 //se tutti dei metodi della classe rispecchiano un metodo di un bean, allora la classe viene ignorata mentre se almeno uno non è considerato tale, l'esecuzione prosegue
                 if (!BeanDetection.detection(method)) {
                     bean = false;
                 }
             }
+
             if (bean==false){
                 //2 Verifico se un metodo interno alla classe non possiede parametri ed e troppo lungo
                 for (MethodBean method: pClass.getMethodList()){

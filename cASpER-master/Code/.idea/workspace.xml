@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ba6d96b-5c19-4766-a2bb-dfec9e36d899" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request Reengineering/Impact Analysis cASpER CR2 CR3.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request Reengineering/Matrice di Connettivita 2.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +25,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.JUnitTestSuite">
+}</component>
+  <component name="RunManager" selected="JUnit.StructuralSpaghettiCodeStrategyTest">
     <configuration name="JUnitTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="casper.test" />
       <shortenClasspath name="MANIFEST" />
@@ -49,6 +49,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StructuralSpaghettiCodeStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casper.test" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StructuralSpaghettiCodeStrategyTest.isSmellyFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casper.test" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategyTest" />
+      <option name="METHOD_NAME" value="isSmellyFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="MANIFEST" />
       <option name="TEST_OBJECT" value="class" />
@@ -58,6 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
+        <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest.isSmellyFalse" />
         <item itemvalue="JUnit.JUnitTestSuite" />
       </list>
     </recent_temporary>
@@ -71,6 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655244384445</updated>
       <workItem from="1655244387409" duration="262000" />
+      <workItem from="1655326102161" duration="7697000" />
     </task>
     <servers />
   </component>
