@@ -84,4 +84,9 @@ public class WizardConcreteFactory implements ClassSmellGUIAbstractFactory{
         return new PromiscuousPackageWizard(packageBeanPP,packages,project);
     }
 
+    @Override
+    public AbstractCodeSmellGUI createSpaghettiCodeGUI(ClassBean c, Project project) {
+        return null;
+    }
+
 }

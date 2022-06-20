@@ -18,6 +18,7 @@ import it.unisa.casper.analysis.code_smell_detection.parallel_inheritance.Histor
 import it.unisa.casper.analysis.code_smell_detection.promiscuous_package.StructuralPromiscuousPackageStrategy;
 import it.unisa.casper.analysis.code_smell_detection.promiscuous_package.TextualPromiscuousPackageStrategy;
 import it.unisa.casper.analysis.code_smell_detection.shotgun_surgery.HistoryShotgunSurgeryStrategy;
+import it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategy;
 import it.unisa.casper.analysis.history_analysis_utility.AnalyzerThread;
 import it.unisa.casper.storage.beans.*;
 
@@ -81,8 +82,8 @@ public class PsiParser implements Parser {
                         dipendence.put("dip" + s + "3", Integer.parseInt(list[3]));
                     }
                 }
-            } catch (Exception e) {
 
+            } catch (Exception e) {
             }
 
             for (PackageBean packageBean : projectPackages) {
@@ -182,6 +183,11 @@ public class PsiParser implements Parser {
         sMisplacedClassCodeSmell.accept(visitor,classBean);
         //classBean.isAffected(sBlobCodeSmell);
         //classBean.isAffected(sMisplacedClassCodeSmell);
+        classBean.setSimilarity(0);
+
+        StructuralSpaghettiCodeStrategy structuralSpaghettiCodeStrategy=new StructuralSpaghettiCodeStrategy(25);
+        SpaghettiCodeSmell sSpaghettiCodeSmell=new SpaghettiCodeSmell(structuralSpaghettiCodeStrategy,"Structural");
+        sSpaghettiCodeSmell.accept(visitor,classBean);
         classBean.setSimilarity(0);
 
     }

@@ -33,6 +33,7 @@ public class SystemStart {
         smell.add("Misplaced");
         smell.add("Blob");
         smell.add("Promiscuous");
+        smell.add("Spaghetti");
         sogliaStructural = new ArrayList<Integer>();
         nameDir = System.getProperty("user.home") + File.separator + ".casper";
         
@@ -84,7 +85,8 @@ public class SystemStart {
                 out.write("00.0,00,All\n" +
                         "00.0,00,All\n" +
                         "00.5,0350,020,0500,All\n" +
-                        "00.5,050,050,All");
+                        "00.5,050,050,All\n"+
+                        "00.25");
                 out.flush();
                 out.newLine();
             } catch (Exception ex) {
@@ -97,6 +99,7 @@ public class SystemStart {
             sogliaStructural.add(500);
             sogliaStructural.add(50);
             sogliaStructural.add(50);
+            sogliaStructural.add(25);
             algoritmo = "All";
         }
     }

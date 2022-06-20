@@ -45,6 +45,8 @@ public class CheckProjectPage extends DialogWrapper {
     private List<ClassBean> divergentChangeList;
     private List<ClassBean> parallelInheritanceList;
     private List<ClassBean> shotgunSurgeryList;
+
+    private List<ClassBean> spaghettiCodeList;
     private JPanel pannello;
     private JTextPane codeVisual;
     private JTable table;
@@ -76,6 +78,7 @@ public class CheckProjectPage extends DialogWrapper {
     private static ArrayList<String> smellName;
     private static ArrayList<String> blobThresholdName;
     private static ArrayList<String> promiscuousThresholdName;
+
     private int maxS = 0;
     private String algorithm;
     private double sogliaCoseno;
@@ -95,6 +98,7 @@ public class CheckProjectPage extends DialogWrapper {
         smellName.add("Divergent Change");
         smellName.add("Shotgun Surgery");
         smellName.add("Parallel Inheritance");
+        smellName.add("Spaghetti Code");
 
         blobThresholdName = new ArrayList<String>();
         blobThresholdName.add("LCOM");
@@ -104,6 +108,7 @@ public class CheckProjectPage extends DialogWrapper {
         promiscuousThresholdName.add("InverseMIntraC");
         promiscuousThresholdName.add("MInterC");
 
+
         promiscuousPackageList = new ArrayList<PackageBean>();
         featureEnvyList = new ArrayList<MethodBean>();
         misplacedClassList = new ArrayList<ClassBean>();
@@ -111,6 +116,7 @@ public class CheckProjectPage extends DialogWrapper {
         divergentChangeList = new ArrayList<ClassBean>();
         parallelInheritanceList = new ArrayList<ClassBean>();
         shotgunSurgeryList = new ArrayList<ClassBean>();
+        spaghettiCodeList=new ArrayList<ClassBean>();
 
         this.currentProject = currentProj;
         this.packages = packages;
@@ -138,7 +144,6 @@ public class CheckProjectPage extends DialogWrapper {
                 promiscuousPackageList.add(p);
             for (ClassBean c : p.getClassList()) {
                 for (CodeSmell smellC : c.getAffectedSmell()) {
-
                     if (!name.equals(smellC.getSmellName()))
                         switch (smellC.getSmellName()) {
                             case "Blob":
@@ -161,6 +166,9 @@ public class CheckProjectPage extends DialogWrapper {
                                 name = "Parallel Inheritance";
                                 parallelInheritanceList.add(c);
                                 break;
+                            case "Spaghetti Code":
+                                name="Spaghetti Code";
+                                spaghettiCodeList.add(c);
                         }
                 }
                 name = "";
@@ -245,6 +253,14 @@ public class CheckProjectPage extends DialogWrapper {
                 algo.get(i).add(algoritmi.get("history"+smellName.get(i).substring(0,1)));
 
             }
+
+            if(smellName.get(i).equalsIgnoreCase("Spaghetti Code")){
+
+                algoritmi.put("structural"+smellName.get(i).substring(0,1), new JCheckBox("structural"));
+                algo.get(i).add(algoritmi.get("structural"+smellName.get(i).substring(0,1)));
+
+            }
+
 
             if(smellName.get(i).equalsIgnoreCase("blob") || smellName.get(i).equalsIgnoreCase("Feature Envy")){
 
@@ -568,6 +584,16 @@ public class CheckProjectPage extends DialogWrapper {
                     String whereToSearch; //tipo di smell, indice della lista dove cercare il bean
                     whatToReturn = (String) table.getValueAt(table.getSelectedRow(), 0);
                     whereToSearch = (String) table.getValueAt(table.getSelectedRow(), 1);
+                    if (whereToSearch.equalsIgnoreCase("spaghetti code")) {
+                        for (ClassBean c : spaghettiCodeList) {
+                            if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
+                                DialogWrapper spaghetti = (DialogWrapper) pageFactory.createSpaghettiCodeGUI(c,currentProject);
+                                spaghetti.show();
+                            }
+                        }
+                    }
+
+
                     if (whereToSearch.equalsIgnoreCase("blob")) {
                         for (ClassBean c : blobList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
@@ -725,6 +751,14 @@ public class CheckProjectPage extends DialogWrapper {
             }
         }
 
+        if (spaghettiCodeList.size() != 0) {
+            if (codeSmell.get("Spaghetti Code").isSelected()) {
+                for (ClassBean c : spaghettiCodeList) {
+                    gestione(c.getAffectedSmell(), "Spaghetti Code", c.getFullQualifiedName());
+                }
+            }
+        }
+
         if (this.table == null) {
             JTable table = new JBTable();
             this.table = table;
@@ -756,6 +790,7 @@ public class CheckProjectPage extends DialogWrapper {
                 used = smell.getAlgoritmsUsed();
                 tableItem = new Vector<String>();
 
+
                 HashMap<String, Double> listThreschold = smell.getIndex();
                 if (  algoritmi.get("textual" + codeSmell.substring(0, 1)) != null  && algoritmi.get("textual" + codeSmell.substring(0, 1)).isSelected() && listThreschold.get("coseno") != null) {
                     if (used.equalsIgnoreCase("textual") && Double.parseDouble(valCoseno.getText()) <= listThreschold.get("coseno")) {
@@ -780,8 +815,8 @@ public class CheckProjectPage extends DialogWrapper {
                 } else {
                     controllo = true;
                 }
-                if (!(codeSmell.equalsIgnoreCase("Promiscuous package") || codeSmell.equalsIgnoreCase("Blob")) && used.equalsIgnoreCase("structural") && Double.parseDouble(valDipendenza.get(0).getText()) <= listThreschold.get("dipendenza")) {
 
+                if (!(codeSmell.equalsIgnoreCase("Promiscuous package") || codeSmell.equalsIgnoreCase("Blob")) && used.equalsIgnoreCase("structural") && Double.parseDouble(valDipendenza.get(0).getText()) <= listThreschold.get("dipendenza")) {
                     complessita += 2;
                     indice = Double.parseDouble(valDipendenza.get(0).getText());
                     dip = listThreschold.get("dipendenza").intValue();
@@ -987,6 +1022,14 @@ public class CheckProjectPage extends DialogWrapper {
                                         for (ClassBean c : parallelInheritanceList) {
                                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
                                                 textContent = c.getTextContent();
+                                            }
+                                        }
+                                    }else{
+                                        if(whereToSearch.equalsIgnoreCase("Spaghetti Code")){
+                                            for (ClassBean c : spaghettiCodeList) {
+                                                if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
+                                                    textContent = c.getTextContent();
+                                                }
                                             }
                                         }
                                     }

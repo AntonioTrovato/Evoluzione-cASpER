@@ -3,6 +3,8 @@ package it.unisa.casper.analysis.code_smell_detection.spaghetti_code;
 import it.unisa.casper.analysis.code_smell.BlobCodeSmell;
 import it.unisa.casper.analysis.code_smell.SpaghettiCodeSmell;
 import it.unisa.casper.storage.beans.*;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,15 +14,15 @@ import java.util.logging.Logger;
 import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.*;
 
-class StructuralSpaghettiCodeStrategyTest {
+public class StructuralSpaghettiCodeStrategyTest {
 
     private MethodList methods;
     private MethodBean metodo,methodRefactoring,methodDecrement,methodUpdate,methodUpdate2, methodIncrement;
 
     private ClassBean isSmelly,noSmelly,belogingClass,belogingClass2;
 
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
+    @Before
+    public void setUp() {
         methods=new MethodList();
         InstanceVariableBeanList instances=new InstanceVariableList();
         instances.getList().add(new InstanceVariableBean("items","Item[]","","private"));
@@ -299,6 +301,7 @@ class StructuralSpaghettiCodeStrategyTest {
                 "public Quality(Item[] items){\n"+
                 "this.items=items;\n"+
                 "}\n"+
+
                 "Public void UpdateQuality(int i){\n"+
                 "for (int i=0;i<items.lenght;i++)\n"+
                 "{\n"+
@@ -653,8 +656,8 @@ class StructuralSpaghettiCodeStrategyTest {
 
     }
 
-    @org.junit.jupiter.api.Test
-    void isSmellyTrue() {
+    @Test
+    public void isSmellyTrue() {
         StructuralSpaghettiCodeStrategy strategy=new StructuralSpaghettiCodeStrategy(20);
         SpaghettiCodeSmell smell = new SpaghettiCodeSmell(strategy, "Structural");
         boolean risultato = isSmelly.isAffected(smell);
@@ -664,8 +667,8 @@ class StructuralSpaghettiCodeStrategyTest {
         assertTrue(risultato);
     }
 
-    @org.junit.jupiter.api.Test
-    void isSmellyFalse() {
+    @Test
+    public void isSmellyFalse() {
         StructuralSpaghettiCodeStrategy strategy=new StructuralSpaghettiCodeStrategy(20);
         SpaghettiCodeSmell smell = new SpaghettiCodeSmell(strategy, "Structural");
         boolean risultato = noSmelly.isAffected(smell);

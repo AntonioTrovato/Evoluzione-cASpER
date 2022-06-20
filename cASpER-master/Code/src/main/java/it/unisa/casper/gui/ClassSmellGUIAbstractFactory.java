@@ -17,4 +17,7 @@ public interface ClassSmellGUIAbstractFactory {
     public AbstractCodeSmellGUI createFeatureEnvyGUI(MethodBean smellMethod, Project project, List<PackageBean> systemPackages);
     public AbstractCodeSmellGUI createParallelInheritanceGUI(ClassBean super1, ClassBean super2, @Nullable Project project,List<PackageBean> systemPackages);
     public AbstractCodeSmellGUI createPromiscuousPackageGUI(PackageBean packageBeanPP, List<PackageBean> packages, Project project);
+
+    public AbstractCodeSmellGUI createSpaghettiCodeGUI(ClassBean c, Project project);
+
 }

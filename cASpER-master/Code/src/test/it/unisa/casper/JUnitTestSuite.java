@@ -9,6 +9,7 @@ import it.unisa.casper.analysis.code_smell_detection.misplaced_class.StructuralM
 import it.unisa.casper.analysis.code_smell_detection.misplaced_class.TextualMisplacedClassStrategyTest;
 import it.unisa.casper.analysis.code_smell_detection.promiscuous_package.StructuralPromiscuousPackageStrategyTest;
 import it.unisa.casper.analysis.code_smell_detection.promiscuous_package.TextualPromiscuousPackageStrategyTest;
+import it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategyTest;
 import it.unisa.casper.refactor.SplitClassTest;
 import it.unisa.casper.refactor.SplitPackagesTest;
 import org.junit.runner.RunWith;
@@ -27,7 +28,8 @@ import org.junit.runners.Suite;
         StructuralPromiscuousPackageStrategyTest.class,
         SplitPackagesTest.class,
         SplitClassTest.class,
-        BeanDetectionTest.class
+        BeanDetectionTest.class,
+        StructuralSpaghettiCodeStrategyTest.class
 })
 
 public class JUnitTestSuite {

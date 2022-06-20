@@ -81,5 +81,10 @@ public class PageConcreteFactory implements ClassSmellGUIAbstractFactory{
         return new PromiscuousPackagePage(packageBeanPP,packages,project);
     }
 
+    @Override
+    public AbstractCodeSmellGUI createSpaghettiCodeGUI(ClassBean c, Project project) {
+        return new SpaghettiCodePage(c,project);
+    }
+
 
 }
