@@ -89,4 +89,9 @@ public class WizardConcreteFactory implements ClassSmellGUIAbstractFactory{
         return null;
     }
 
+    @Override
+    public AbstractCodeSmellGUI createSwissArmyKnifeGUI(ClassBean c, Project project) {
+        return null;
+    }
+
 }

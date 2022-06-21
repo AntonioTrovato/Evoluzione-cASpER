@@ -19,6 +19,7 @@ import it.unisa.casper.analysis.code_smell_detection.promiscuous_package.Structu
 import it.unisa.casper.analysis.code_smell_detection.promiscuous_package.TextualPromiscuousPackageStrategy;
 import it.unisa.casper.analysis.code_smell_detection.shotgun_surgery.HistoryShotgunSurgeryStrategy;
 import it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategy;
+import it.unisa.casper.analysis.code_smell_detection.swiss_army_knife.StructuralSwissArmyKnifeCodeStrategy;
 import it.unisa.casper.analysis.history_analysis_utility.AnalyzerThread;
 import it.unisa.casper.storage.beans.*;
 
@@ -188,6 +189,12 @@ public class PsiParser implements Parser {
         StructuralSpaghettiCodeStrategy structuralSpaghettiCodeStrategy=new StructuralSpaghettiCodeStrategy(25);
         SpaghettiCodeSmell sSpaghettiCodeSmell=new SpaghettiCodeSmell(structuralSpaghettiCodeStrategy,"Structural");
         sSpaghettiCodeSmell.accept(visitor,classBean);
+        classBean.setSimilarity(0);
+
+
+        StructuralSwissArmyKnifeCodeStrategy structuralSwissArmyKnifeCodeStrategy=new StructuralSwissArmyKnifeCodeStrategy(3);
+        SwissArmyKnifeCodeSmell sSwissArmyKnifeCodeSmell= new SwissArmyKnifeCodeSmell(structuralSwissArmyKnifeCodeStrategy,"Structural");
+        sSwissArmyKnifeCodeSmell.accept(visitor,classBean);
         classBean.setSimilarity(0);
 
     }

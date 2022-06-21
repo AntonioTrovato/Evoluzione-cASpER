@@ -19,5 +19,6 @@ public interface ClassSmellGUIAbstractFactory {
     public AbstractCodeSmellGUI createPromiscuousPackageGUI(PackageBean packageBeanPP, List<PackageBean> packages, Project project);
 
     public AbstractCodeSmellGUI createSpaghettiCodeGUI(ClassBean c, Project project);
+    public AbstractCodeSmellGUI createSwissArmyKnifeGUI(ClassBean c, Project project);
 
 }

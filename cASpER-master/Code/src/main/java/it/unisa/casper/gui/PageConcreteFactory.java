@@ -86,5 +86,9 @@ public class PageConcreteFactory implements ClassSmellGUIAbstractFactory{
         return new SpaghettiCodePage(c,project);
     }
 
+    @Override
+    public AbstractCodeSmellGUI createSwissArmyKnifeGUI(ClassBean c, Project project) {
+        return new SwissArmyKnifeCodePage(c,project);
+    }
 
 }

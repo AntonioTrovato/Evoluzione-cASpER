@@ -47,6 +47,8 @@ public class CheckProjectPage extends DialogWrapper {
     private List<ClassBean> shotgunSurgeryList;
 
     private List<ClassBean> spaghettiCodeList;
+
+    private List<ClassBean> swissArmyKnifeList;
     private JPanel pannello;
     private JTextPane codeVisual;
     private JTable table;
@@ -99,6 +101,7 @@ public class CheckProjectPage extends DialogWrapper {
         smellName.add("Shotgun Surgery");
         smellName.add("Parallel Inheritance");
         smellName.add("Spaghetti Code");
+        smellName.add("Swiss Army Knife");
 
         blobThresholdName = new ArrayList<String>();
         blobThresholdName.add("LCOM");
@@ -117,6 +120,7 @@ public class CheckProjectPage extends DialogWrapper {
         parallelInheritanceList = new ArrayList<ClassBean>();
         shotgunSurgeryList = new ArrayList<ClassBean>();
         spaghettiCodeList=new ArrayList<ClassBean>();
+        swissArmyKnifeList=new ArrayList<ClassBean>();
 
         this.currentProject = currentProj;
         this.packages = packages;
@@ -169,6 +173,9 @@ public class CheckProjectPage extends DialogWrapper {
                             case "Spaghetti Code":
                                 name="Spaghetti Code";
                                 spaghettiCodeList.add(c);
+                            case "Swiss Army Knide":
+                                name="Swiss Army Knife";
+                                swissArmyKnifeList.add(c);
                         }
                 }
                 name = "";
@@ -255,6 +262,13 @@ public class CheckProjectPage extends DialogWrapper {
             }
 
             if(smellName.get(i).equalsIgnoreCase("Spaghetti Code")){
+
+                algoritmi.put("structural"+smellName.get(i).substring(0,1), new JCheckBox("structural"));
+                algo.get(i).add(algoritmi.get("structural"+smellName.get(i).substring(0,1)));
+
+            }
+
+            if(smellName.get(i).equalsIgnoreCase("Swiss Army Knife")){
 
                 algoritmi.put("structural"+smellName.get(i).substring(0,1), new JCheckBox("structural"));
                 algo.get(i).add(algoritmi.get("structural"+smellName.get(i).substring(0,1)));
@@ -584,6 +598,14 @@ public class CheckProjectPage extends DialogWrapper {
                     String whereToSearch; //tipo di smell, indice della lista dove cercare il bean
                     whatToReturn = (String) table.getValueAt(table.getSelectedRow(), 0);
                     whereToSearch = (String) table.getValueAt(table.getSelectedRow(), 1);
+                    if (whereToSearch.equalsIgnoreCase("swiss army knife")) {
+                        for (ClassBean c : spaghettiCodeList) {
+                            if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
+                                DialogWrapper swissArmyKnife = (DialogWrapper) pageFactory.createSwissArmyKnifeGUI(c,currentProject);
+                                swissArmyKnife.show();
+                            }
+                        }
+                    }
                     if (whereToSearch.equalsIgnoreCase("spaghetti code")) {
                         for (ClassBean c : spaghettiCodeList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
@@ -755,6 +777,14 @@ public class CheckProjectPage extends DialogWrapper {
             if (codeSmell.get("Spaghetti Code").isSelected()) {
                 for (ClassBean c : spaghettiCodeList) {
                     gestione(c.getAffectedSmell(), "Spaghetti Code", c.getFullQualifiedName());
+                }
+            }
+        }
+
+        if (spaghettiCodeList.size() != 0) {
+            if (codeSmell.get("Swiss Army Knife").isSelected()) {
+                for (ClassBean c : spaghettiCodeList) {
+                    gestione(c.getAffectedSmell(), "Swiss Army Knife", c.getFullQualifiedName());
                 }
             }
         }
@@ -1029,6 +1059,14 @@ public class CheckProjectPage extends DialogWrapper {
                                             for (ClassBean c : spaghettiCodeList) {
                                                 if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
                                                     textContent = c.getTextContent();
+                                                }
+                                            }
+                                        }else{
+                                            if(whereToSearch.equalsIgnoreCase("Swiss Army Knife")){
+                                                for (ClassBean c : spaghettiCodeList) {
+                                                    if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
+                                                        textContent = c.getTextContent();
+                                                    }
                                                 }
                                             }
                                         }
