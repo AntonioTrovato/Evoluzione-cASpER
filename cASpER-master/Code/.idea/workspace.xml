@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba6d96b-5c19-4766-a2bb-dfec9e36d899" name="Changes" comment="" />
+    <list default="true" id="5ba6d96b-5c19-4766-a2bb-dfec9e36d899" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Aggiunta CodeSmell cASpER CR2 CR3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Aggiunta CodeSmell cASpER CR2 CR3.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Integration Test.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/System Test Plan.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/System Test Plan.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Test Results - JUnitTestSuite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Test Results Post Implementation - JUnitTestSuite.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Test Results Post Implementation - JUnitTestSuite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Unit Test.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +44,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\main\java\it\unisa\casper\gui" />
@@ -65,21 +81,7 @@
       <recent name="it.unisa.casper.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JUnitTestSuite">
-    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.TestRunner" />
-      <module name="casper.test" />
-      <shortenClasspath name="MANIFEST" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.unisa.casper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.casper2">
     <configuration default="true" type="Application" factoryName="Application">
       <shortenClasspath name="MANIFEST" />
       <method v="2">
@@ -97,6 +99,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.unisa.casper" />
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.JUnitTestSuite" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,6 +117,23 @@
       <option name="PACKAGE_NAME" value="it.unisa.casper.parser" />
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.parser.PsiParserTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PsiParserTest.testParserExtractClassBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casper.test" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper.parser" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.parser.PsiParserTest" />
+      <option name="METHOD_NAME" value="testParserExtractClassBean" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,13 +177,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.casper" />
+      <item itemvalue="Gradle.casper2" />
+      <item itemvalue="Gradle.Code [dependencies]" />
+      <item itemvalue="JUnit.PsiParserTest.testParserExtractClassBean" />
+      <item itemvalue="JUnit.JUnitTestSuite" />
+      <item itemvalue="JUnit.PsiParserTest" />
+      <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
+      <item itemvalue="JUnit.StructuralSwissArmyKnifeStrategyTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StructuralSwissArmyKnifeStrategyTest" />
         <item itemvalue="JUnit.JUnitTestSuite" />
         <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
-        <item itemvalue="JUnit.StructuralSwissArmyKnifeStrategyTest" />
+        <item itemvalue="JUnit.PsiParserTest.testParserExtractClassBean" />
         <item itemvalue="JUnit.PsiParserTest" />
-        <item itemvalue="Application.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +218,8 @@
       <workItem from="1655764877104" duration="7093000" />
       <workItem from="1655772178919" duration="133000" />
       <workItem from="1655845409343" duration="3427000" />
+      <workItem from="1655929077466" duration="836000" />
+      <workItem from="1655930779894" duration="1662000" />
     </task>
     <servers />
   </component>
@@ -204,5 +236,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cASpER$StructuralSpaghettiCodeStrategyTest.ic" NAME="StructuralSpaghettiCodeStrategyTest Coverage Results" MODIFIED="1655930250543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cASpER$PsiParserTest_testParserExtractClassBean.ic" NAME="PsiParserTest.testParserExtractClassBean Coverage Results" MODIFIED="1655929188903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.parser.*</FILTER>
+    </SUITE>
   </component>
 </project>

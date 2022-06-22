@@ -173,9 +173,11 @@ public class CheckProjectPage extends DialogWrapper {
                             case "Spaghetti Code":
                                 name="Spaghetti Code";
                                 spaghettiCodeList.add(c);
-                            case "Swiss Army Knide":
+                                break;
+                            case "Swiss Army Knife":
                                 name="Swiss Army Knife";
                                 swissArmyKnifeList.add(c);
+                                break;
                         }
                 }
                 name = "";
@@ -781,9 +783,9 @@ public class CheckProjectPage extends DialogWrapper {
             }
         }
 
-        if (spaghettiCodeList.size() != 0) {
+        if (swissArmyKnifeList.size() != 0) {
             if (codeSmell.get("Swiss Army Knife").isSelected()) {
-                for (ClassBean c : spaghettiCodeList) {
+                for (ClassBean c : swissArmyKnifeList) {
                     gestione(c.getAffectedSmell(), "Swiss Army Knife", c.getFullQualifiedName());
                 }
             }
