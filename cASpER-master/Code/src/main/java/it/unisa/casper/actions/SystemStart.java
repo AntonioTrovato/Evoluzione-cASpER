@@ -13,6 +13,7 @@ import it.unisa.casper.parser.PsiParser;
 import it.unisa.casper.storage.beans.ClassBean;
 import it.unisa.casper.storage.beans.MethodBean;
 import it.unisa.casper.storage.beans.PackageBean;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -33,7 +34,9 @@ public class SystemStart {
         smell.add("Misplaced");
         smell.add("Blob");
         smell.add("Promiscuous");
-        smell.add("Spaghetti");
+        //AGGIUNTO ANGELO
+        smell.add("SpaghettiCode");
+        smell.add("SwissArmyKnife");
         sogliaStructural = new ArrayList<Integer>();
         nameDir = System.getProperty("user.home") + File.separator + ".casper";
         
@@ -57,36 +60,45 @@ public class SystemStart {
 
             for (String s : smell) {
                 list = b.readLine().split(",");
-                sogliaCoseno = Double.parseDouble(list[0]);
-                if (sogliaCoseno < minC) {
-                    minC = sogliaCoseno;
-                }
-                app = Integer.parseInt(list[1]);
-                if (s.equalsIgnoreCase("promiscuous")) {
-                    sogliaStructural.add(app);
-                    sogliaStructural.add(Integer.parseInt(list[2]));
-                } else {
-                    if (!s.equalsIgnoreCase("blob")) {
-                        if (app < sogliaStructural.get(0)) {
-                            sogliaStructural.add(0, app);
-                        }
-                        algoritmo = list[2];
-                    } else {
+                //MODIFICA ANGELO
+                if(!(s.equalsIgnoreCase("spaghetticode")||s.equalsIgnoreCase("swissarmyknife"))) {
+                    sogliaCoseno = Double.parseDouble(list[0]);
+                    if (sogliaCoseno < minC) {
+                        minC = sogliaCoseno;
+                    }
+                    app = Integer.parseInt(list[1]);
+                    if (s.equalsIgnoreCase("promiscuous")) {
                         sogliaStructural.add(app);
                         sogliaStructural.add(Integer.parseInt(list[2]));
-                        sogliaStructural.add(Integer.parseInt(list[3]));
+                    } else {
+                        if (!s.equalsIgnoreCase("blob")) {
+                            if (app < sogliaStructural.get(0)) {
+                                sogliaStructural.add(0, app);
+                            }
+                            algoritmo = list[2];
+                        } else {
+                            sogliaStructural.add(app);
+                            sogliaStructural.add(Integer.parseInt(list[2]));
+                            sogliaStructural.add(Integer.parseInt(list[3]));
+                        }
                     }
+                }else{
+                    System.out.println(list[0]);
+                    sogliaStructural.add(Integer.parseInt(list[0]));
                 }
             }
         } catch (Exception e) {
+            System.out.println(e);
             try {
                 FileWriter f = new FileWriter(nameDir + File.separator + "threshold.txt");
                 BufferedWriter out = new BufferedWriter(f);
+                //MODIFICATO ANGELO
                 out.write("00.0,00,All\n" +
                         "00.0,00,All\n" +
                         "00.5,0350,020,0500,All\n" +
                         "00.5,050,050,All\n"+
-                        "00.25");
+                        "025,All\n"+
+                        "03,All");
                 out.flush();
                 out.newLine();
             } catch (Exception ex) {
@@ -100,6 +112,7 @@ public class SystemStart {
             sogliaStructural.add(50);
             sogliaStructural.add(50);
             sogliaStructural.add(25);
+            sogliaStructural.add(3);
             algoritmo = "All";
         }
     }

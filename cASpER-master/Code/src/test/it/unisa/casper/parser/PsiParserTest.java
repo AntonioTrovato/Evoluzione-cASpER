@@ -75,6 +75,7 @@ public class PsiParserTest extends TestConfig {
         log.info("ClassiEstese\n" + classiEstese);
     }
 
+
     @Test
     public void testParserExtractClassImplementate1() throws Exception {
         int classiImplementate=0;
@@ -95,6 +96,23 @@ public class PsiParserTest extends TestConfig {
     @Test
     public void testParserExtractClassImplementate2() throws Exception {
         int classiImplementate=0;
+        super.setFileName("Test_SP_2.java");
+        parser=new PsiParser(getProject());
+        packageList[0]= parser.parse();
+        for (PackageBean packageBean : packageList[0]){
+            for (ClassBean classBean: packageBean.getClassList()){
+                if(classBean.getClassiImplementate()!=null)
+                    classiImplementate=classBean.getClassiImplementate().size();
+            }
+        }
+        assertTrue(classiImplementate==1);
+        java.util.logging.Logger log = java.util.logging.Logger.getLogger(getClass().getName());
+        log.info("ClassiImplementate\n" + classiImplementate);
+    }
+
+    @Test
+    public void testParserExtractClassImplementate3() throws Exception {
+        int classiImplementate=0;
         super.setFileName("SwissArmy.java");
         parser=new PsiParser(getProject());
         packageList[0]= parser.parse();
@@ -104,7 +122,7 @@ public class PsiParserTest extends TestConfig {
                     classiImplementate=classBean.getClassiImplementate().size();
             }
         }
-        assertTrue(classiImplementate==3);
+        assertTrue(classiImplementate>1);
         java.util.logging.Logger log = java.util.logging.Logger.getLogger(getClass().getName());
         log.info("ClassiImplementate\n" + classiImplementate);
     }

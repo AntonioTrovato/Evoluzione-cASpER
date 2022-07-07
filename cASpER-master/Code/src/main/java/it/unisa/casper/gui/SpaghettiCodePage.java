@@ -139,7 +139,7 @@ public class SpaghettiCodePage extends DialogWrapper implements AbstractCodeSmel
 
             @Override
             protected void doAction(ActionEvent actionEvent) {
-                    Messages.showMessageDialog(message, "Oh!No!", Messages.getErrorIcon());
+                    Messages.showMessageDialog("Refactoring ancora non disponibile", "Oh!No!", Messages.getErrorIcon());
             }
         };
 

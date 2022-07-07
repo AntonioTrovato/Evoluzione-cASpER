@@ -66,6 +66,9 @@ public class PsiParser implements Parser {
             smell.add("Misplaced");
             smell.add("Blob");
             smell.add("Promiscuous");
+            //AGGIUNTO ANGELO
+            smell.add("SpaghettiCode");
+            smell.add("SwissArmyKnife");
             try {
                 FileReader f = new FileReader(System.getProperty("user.home") + File.separator + ".casper" + File.separator + "threshold.txt");
                 BufferedReader b = new BufferedReader(f);
@@ -73,14 +76,19 @@ public class PsiParser implements Parser {
                 String[] list = null;
                 for (String s : smell) {
                     list = b.readLine().split(",");
-                    coseno.put("coseno" + s, Double.parseDouble(list[0]));
-                    dipendence.put("dip" + s, Integer.parseInt(list[1]));
-                    if (s.equalsIgnoreCase("promiscuous")) {
-                        dipendence.put("dip" + s + "2", Integer.parseInt(list[2]));
-                    }
-                    if (s.equalsIgnoreCase("blob")) {
-                        dipendence.put("dip" + s + "2", Integer.parseInt(list[2]));
-                        dipendence.put("dip" + s + "3", Integer.parseInt(list[3]));
+                    //MODIFICATO ANGELO
+                    if(!((s.equalsIgnoreCase("SpaghettiCode")||(s.equalsIgnoreCase("SwissArmyKnife"))))) {
+                        coseno.put("coseno" + s, Double.parseDouble(list[0]));
+                        dipendence.put("dip" + s, Integer.parseInt(list[1]));
+                        if (s.equalsIgnoreCase("promiscuous")) {
+                            dipendence.put("dip" + s + "2", Integer.parseInt(list[2]));
+                        }
+                        if (s.equalsIgnoreCase("blob")) {
+                            dipendence.put("dip" + s + "2", Integer.parseInt(list[2]));
+                            dipendence.put("dip" + s + "3", Integer.parseInt(list[3]));
+                        }
+                    }else{
+                        dipendence.put("dip" + s, Integer.parseInt(list[0]));
                     }
                 }
 
@@ -186,13 +194,13 @@ public class PsiParser implements Parser {
         //classBean.isAffected(sMisplacedClassCodeSmell);
         classBean.setSimilarity(0);
 
-        StructuralSpaghettiCodeStrategy structuralSpaghettiCodeStrategy=new StructuralSpaghettiCodeStrategy(25);
+        StructuralSpaghettiCodeStrategy structuralSpaghettiCodeStrategy=new StructuralSpaghettiCodeStrategy(dipendence.get("dipSpaghettiCode"));
         SpaghettiCodeSmell sSpaghettiCodeSmell=new SpaghettiCodeSmell(structuralSpaghettiCodeStrategy,"Structural");
         sSpaghettiCodeSmell.accept(visitor,classBean);
         classBean.setSimilarity(0);
 
 
-        StructuralSwissArmyKnifeCodeStrategy structuralSwissArmyKnifeCodeStrategy=new StructuralSwissArmyKnifeCodeStrategy(3);
+        StructuralSwissArmyKnifeCodeStrategy structuralSwissArmyKnifeCodeStrategy=new StructuralSwissArmyKnifeCodeStrategy(dipendence.get("dipSwissArmyKnife"));
         SwissArmyKnifeCodeSmell sSwissArmyKnifeCodeSmell= new SwissArmyKnifeCodeSmell(structuralSwissArmyKnifeCodeStrategy,"Structural");
         sSwissArmyKnifeCodeSmell.accept(visitor,classBean);
         classBean.setSimilarity(0);

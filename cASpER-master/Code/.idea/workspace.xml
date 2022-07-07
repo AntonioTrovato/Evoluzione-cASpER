@@ -5,14 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ba6d96b-5c19-4766-a2bb-dfec9e36d899" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Aggiunta CodeSmell cASpER CR2 CR3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Aggiunta CodeSmell cASpER CR2 CR3.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Integration Test.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/System Test Plan.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/System Test Plan.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Test Results - JUnitTestSuite.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Test Results Post Implementation - JUnitTestSuite.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Test Results Post Implementation - JUnitTestSuite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Documentazione generale/Change Request CodeSmell/Documentazione Testing/Unit Test.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/actions/SystemStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/actions/SystemStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/ConfigureThreshold.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/SpaghettiCodePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/SpaghettiCodePage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/SwissArmyKnifeCodePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/gui/SwissArmyKnifeCodePage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main-instrumented/it/unisa/casper/parser/PsiParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/actions/SystemStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/actions/SystemStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/ConfigureThreshold.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/SpaghettiCodePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/SpaghettiCodePage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/SwissArmyKnifeCodePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/gui/SwissArmyKnifeCodePage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unisa/casper/parser/PsiParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/casper-1.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/casper-1.1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/actions/SystemStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/actions/SystemStart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/ConfigureThreshold.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/SpaghettiCodePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/SpaghettiCodePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/SwissArmyKnifeCodePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/gui/SwissArmyKnifeCodePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unisa/casper/parser/PsiParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unisa/casper/parser/PsiParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/swiss_army_knife/StructuralSwissArmyKnifeStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/it/unisa/casper/analysis/code_smell_detection/swiss_army_knife/StructuralSwissArmyKnifeStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/it/unisa/casper/parser/PsiParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/it/unisa/casper/parser/PsiParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +64,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="casper" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,20 +104,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/angel/Desktop/cASpER-master/Code&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\main\java\it\unisa\casper\gui" />
+      <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src" />
+      <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\testData" />
       <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\main\java\it\unisa\casper\parser" />
       <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\main\java\it\unisa\casper\analysis\code_smell" />
-      <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\main\java\it\unisa\casper\analysis\code_smell_detection\swiss_army_knife" />
-      <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\angel\Desktop\Evoluzione-cASpER\cASpER-master\Code\src\testData" />
@@ -76,6 +142,8 @@
       <recent name="it.unisa.casper.parser" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.unisa.casper.parser" />
+      <recent name="it.unisa.casper" />
       <recent name="it.unisa.casper.analysis.code_smell_detection.swiss_army_knife" />
       <recent name="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
       <recent name="it.unisa.casper.gui" />
@@ -99,7 +167,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.unisa.casper" />
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.JUnitTestSuite" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,7 +175,7 @@
     <configuration name="PsiParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="casper.test" />
       <shortenClasspath name="MANIFEST" />
-      <extension name="coverage">
+      <extension name="coverage" runner="jacoco">
         <pattern>
           <option name="PATTERN" value="it.unisa.casper.parser.*" />
           <option name="ENABLED" value="true" />
@@ -116,12 +183,29 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.unisa.casper.parser" />
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.parser.PsiParserTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PsiParserTest.testParserExtractClassBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PsiParserTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="casper.test" />
+      <shortenClasspath name="MANIFEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unisa.casper.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.unisa.casper.parser" />
+      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.parser.PsiParserTest2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PsiParserTest.testIntegrationEmpityProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="casper.test" />
       <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
@@ -132,13 +216,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.unisa.casper.parser" />
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.parser.PsiParserTest" />
-      <option name="METHOD_NAME" value="testParserExtractClassBean" />
+      <option name="METHOD_NAME" value="testIntegrationEmpityProject" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StructuralSpaghettiCodeStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StructuralSpaghettiCodeStrategyTest.testIsSmelly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="casper.test" />
       <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
@@ -149,23 +233,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code" />
       <option name="MAIN_CLASS_NAME" value="it.unisa.casper.analysis.code_smell_detection.spaghetti_code.StructuralSpaghettiCodeStrategyTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StructuralSwissArmyKnifeStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="casper.test" />
-      <shortenClasspath name="MANIFEST" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="it.unisa.casper.analysis.code_smell_detection.swiss_army_knife.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="it.unisa.casper.analysis.code_smell_detection.swiss_army_knife" />
-      <option name="MAIN_CLASS_NAME" value="it.unisa.casper.analysis.code_smell_detection.swiss_army_knife.StructuralSwissArmyKnifeStrategyTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testIsSmelly" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,19 +250,19 @@
       <item itemvalue="Gradle.casper" />
       <item itemvalue="Gradle.casper2" />
       <item itemvalue="Gradle.Code [dependencies]" />
-      <item itemvalue="JUnit.PsiParserTest.testParserExtractClassBean" />
       <item itemvalue="JUnit.JUnitTestSuite" />
+      <item itemvalue="JUnit.PsiParserTest.testIntegrationEmpityProject" />
+      <item itemvalue="JUnit.PsiParserTest2" />
+      <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest.testIsSmelly" />
       <item itemvalue="JUnit.PsiParserTest" />
-      <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
-      <item itemvalue="JUnit.StructuralSwissArmyKnifeStrategyTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StructuralSwissArmyKnifeStrategyTest" />
         <item itemvalue="JUnit.JUnitTestSuite" />
-        <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest" />
-        <item itemvalue="JUnit.PsiParserTest.testParserExtractClassBean" />
         <item itemvalue="JUnit.PsiParserTest" />
+        <item itemvalue="JUnit.PsiParserTest2" />
+        <item itemvalue="JUnit.PsiParserTest.testIntegrationEmpityProject" />
+        <item itemvalue="JUnit.StructuralSpaghettiCodeStrategyTest.testIsSmelly" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +289,20 @@
       <workItem from="1655845409343" duration="3427000" />
       <workItem from="1655929077466" duration="836000" />
       <workItem from="1655930779894" duration="1662000" />
+      <workItem from="1656348194478" duration="556000" />
+      <workItem from="1656603441909" duration="3339000" />
+      <workItem from="1656609730723" duration="848000" />
+      <workItem from="1656671622938" duration="7861000" />
+      <workItem from="1656701513823" duration="553000" />
+      <workItem from="1656780125631" duration="1355000" />
+      <workItem from="1656930663187" duration="5250000" />
+      <workItem from="1657018380997" duration="1256000" />
+      <workItem from="1657019739014" duration="334000" />
+      <workItem from="1657055498222" duration="478000" />
+      <workItem from="1657056296811" duration="21000" />
+      <workItem from="1657056379789" duration="6000000" />
+      <workItem from="1657105971510" duration="4238000" />
+      <workItem from="1657202990395" duration="1747000" />
     </task>
     <servers />
   </component>
@@ -238,10 +321,22 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cASpER$StructuralSpaghettiCodeStrategyTest.ic" NAME="StructuralSpaghettiCodeStrategyTest Coverage Results" MODIFIED="1655930250543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/cASpER$StructuralSwissArmyKnifeStrategyTest.exec" NAME="StructuralSwissArmyKnifeStrategyTest Coverage Results" MODIFIED="1656700719578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.analysis.code_smell_detection.swiss_army_knife.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cASpER$StructuralSpaghettiCodeStrategyTest.ic" NAME="StructuralSpaghettiCodeStrategyTest Coverage Results" MODIFIED="1656691802086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cASpER$StructuralSpaghettiCodeStrategyTest.exec" NAME="StructuralSpaghettiCodeStrategyTest Coverage Results" MODIFIED="1656783205374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/cASpER$PsiParserTest_testParserExtractClassBean.ic" NAME="PsiParserTest.testParserExtractClassBean Coverage Results" MODIFIED="1655929188903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.parser.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cASpER$StructuralSpaghettiCodeStrategyTest_testIsSmelly.ic" NAME="StructuralSpaghettiCodeStrategyTest.testIsSmelly Coverage Results" MODIFIED="1656783436261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>it.unisa.casper.analysis.code_smell_detection.spaghetti_code.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cASpER$PsiParserTest.exec" NAME="PsiParserTest Coverage Results" MODIFIED="1656931546783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>it.unisa.casper.parser.*</FILTER>
     </SUITE>
   </component>

@@ -601,7 +601,7 @@ public class CheckProjectPage extends DialogWrapper {
                     whatToReturn = (String) table.getValueAt(table.getSelectedRow(), 0);
                     whereToSearch = (String) table.getValueAt(table.getSelectedRow(), 1);
                     if (whereToSearch.equalsIgnoreCase("swiss army knife")) {
-                        for (ClassBean c : spaghettiCodeList) {
+                        for (ClassBean c : swissArmyKnifeList) {
                             if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
                                 DialogWrapper swissArmyKnife = (DialogWrapper) pageFactory.createSwissArmyKnifeGUI(c,currentProject);
                                 swissArmyKnife.show();
@@ -1065,7 +1065,7 @@ public class CheckProjectPage extends DialogWrapper {
                                             }
                                         }else{
                                             if(whereToSearch.equalsIgnoreCase("Swiss Army Knife")){
-                                                for (ClassBean c : spaghettiCodeList) {
+                                                for (ClassBean c : swissArmyKnifeList) {
                                                     if (c.getFullQualifiedName().equalsIgnoreCase(whatToReturn)) {
                                                         textContent = c.getTextContent();
                                                     }

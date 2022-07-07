@@ -136,7 +136,7 @@ public class SwissArmyKnifeCodePage extends DialogWrapper implements AbstractCod
 
             @Override
             protected void doAction(ActionEvent actionEvent) {
-                    Messages.showMessageDialog(message, "Oh!No!", Messages.getErrorIcon());
+                    Messages.showMessageDialog("Refactoring ancora non disponibile", "Oh!No!", Messages.getErrorIcon());
             }
         };
 

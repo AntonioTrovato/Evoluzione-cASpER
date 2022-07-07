@@ -5,34 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b6a8d4-7f4e-428f-b395-7aee49ce6057" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cASpER-master/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main-instrumented/it/unisa/casper/gui/CheckProjectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/classes/java/main/it/unisa/casper/gui/CheckProjectPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/libs/casper-1.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/libs/casper-1.1.2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/patchedPluginXmlFiles/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/patchedPluginXmlFiles/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build/resources/main/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build/resources/main/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/src/main/java/it/unisa/casper/gui/CheckProjectPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/src/main/java/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/src/test/it/unisa/casper/analysis/code_smell_detection/spaghetti_code/StructuralSpaghettiCodeStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/src/test/it/unisa/casper/analysis/code_smell_detection/swiss_army_knife/StructuralSwissArmyKnifeStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/src/test/it/unisa/casper/analysis/code_smell_detection/swiss_army_knife/StructuralSwissArmyKnifeStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cASpER-master/Code/src/test/it/unisa/casper/parser/PsiParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cASpER-master/Code/src/test/it/unisa/casper/parser/PsiParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +40,55 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Evoluzione-cASpER" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Evoluzione-cASpER" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
@@ -76,6 +103,8 @@
       <updated>1652277764991</updated>
       <workItem from="1652277766975" duration="16000" />
       <workItem from="1652543461912" duration="74000" />
+      <workItem from="1656603421895" duration="17000" />
+      <workItem from="1657018083672" duration="276000" />
     </task>
     <servers />
   </component>
@@ -83,9 +112,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1652543491723">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1657018154281">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1652543491723" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1657018154281" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1657018084352">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/0.-1080.1920.1040@0.0.1536.824" timestamp="1657018084352" />
   </component>
 </project>
